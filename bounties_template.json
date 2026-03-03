@@ -1,0 +1,4029 @@
+{
+  "version": "1.0.0",
+  "generated_datetime": "2026-03-03T02:54:47-06:00",
+  "platform_ecosystem_name": "Algora",
+  "platform_combined_bounties": 201,
+  "platform_open_bounties": 201,
+  "total_completed_bounties": 0,
+  "total_rewards_value_usd": 51786.0,
+  "total_projects": 46,
+  "projects": {
+    "ZIO": {
+      "org_handle": "ZIO",
+      "open_bounty_count": 47,
+      "open_bounties_total_value_usd": 18600.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 8,
+        "total_project_bounty_repos": 8,
+        "repo_list": {
+          "zio": {
+            "description": "Placeholder description for zio",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$2,500",
+                "issue_id": 9356,
+                "deps": [],
+                "title": "Implement NIO scheduler for ZIO",
+                "url": "https://github.com/zio/zio/issues/9356",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$1,500",
+                "issue_id": 8861,
+                "deps": [],
+                "title": "Create Loom-friendly concurrent weak set (FiberSet)",
+                "url": "https://github.com/zio/zio/issues/8861",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$1,250",
+                "issue_id": 8807,
+                "deps": [],
+                "title": "Creating highly optimized and specialized fiber mailbox",
+                "url": "https://github.com/zio/zio/issues/8807",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$850",
+                "issue_id": 9878,
+                "deps": [],
+                "title": "ZScheduler parks+unparks workers too frequently",
+                "url": "https://github.com/zio/zio/issues/9878",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$750",
+                "issue_id": 9877,
+                "deps": [],
+                "title": "Can Fiber(Runtime) and Promise be merged?",
+                "url": "https://github.com/zio/zio/issues/9877",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$650",
+                "issue_id": 9093,
+                "deps": [],
+                "title": "ZIO's `Semaphore` performance not too great",
+                "url": "https://github.com/zio/zio/issues/9093",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$650",
+                "issue_id": 9101,
+                "deps": [],
+                "title": "zio.test.Gen generates the same data every time in certain conditions ",
+                "url": "https://github.com/zio/zio/issues/9101",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$400",
+                "issue_id": 9909,
+                "deps": [],
+                "title": "Create test suite that tests the correct behaviour of `ZIOApp`",
+                "url": "https://github.com/zio/zio/issues/9909",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$300",
+                "issue_id": 9874,
+                "deps": [],
+                "title": "Handling errors allows recovering from defects",
+                "url": "https://github.com/zio/zio/issues/9874",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 9084,
+                "deps": [],
+                "title": "Add ZStream.fromInputStreamInterruptible",
+                "url": "https://github.com/zio/zio/issues/9084",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 9810,
+                "deps": [],
+                "title": "ZStreams buffer(1) is buffering 2.",
+                "url": "https://github.com/zio/zio/issues/9810",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 9211,
+                "deps": [],
+                "title": "ZIO.timeoutTO has tremendous overhead",
+                "url": "https://github.com/zio/zio/issues/9211",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 9681,
+                "deps": [],
+                "title": "Scala Native `WeakConcurrentBag` NPE when forking 10K fibers",
+                "url": "https://github.com/zio/zio/issues/9681",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$125",
+                "issue_id": 9339,
+                "deps": [],
+                "title": "Parallelism level in `ZStream#mapZIOPar` is bounded by the buffer size",
+                "url": "https://github.com/zio/zio/issues/9339",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 8792,
+                "deps": [],
+                "title": "ZStream.tapSink, either a flaky test or flaky implementation",
+                "url": "https://github.com/zio/zio/issues/8792",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 8747,
+                "deps": [],
+                "title": "Missing stacktraces from right-side effect of `.flatMap`",
+                "url": "https://github.com/zio/zio/issues/8747",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 9844,
+                "deps": [],
+                "title": "improved `Queue` shutdown functionality",
+                "url": "https://github.com/zio/zio/issues/9844",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 8664,
+                "deps": [],
+                "title": "zio-test: classic assertion `equalTo` using `Diff`",
+                "url": "https://github.com/zio/zio/issues/8664",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 9268,
+                "deps": [],
+                "title": "Easier derivation of Config with Scala 3",
+                "url": "https://github.com/zio/zio/issues/9268",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 9170,
+                "deps": [],
+                "title": "Status of Runtime Operation Logging",
+                "url": "https://github.com/zio/zio/issues/9170",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 8668,
+                "deps": [],
+                "title": "zio-test: `macro has not been expanded` for test with flatMap",
+                "url": "https://github.com/zio/zio/issues/8668",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 8686,
+                "deps": [],
+                "title": "ZStream.groupedWithin works in unexpected way for infinite stream",
+                "url": "https://github.com/zio/zio/issues/8686",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 9189,
+                "deps": [],
+                "title": "Use ConcurrentLinkedDeque from Scala Native",
+                "url": "https://github.com/zio/zio/issues/9189",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-schema": {
+            "description": "Placeholder description for zio-schema",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-schema",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$500",
+                "issue_id": 754,
+                "deps": [],
+                "title": "XML Codec",
+                "url": "https://github.com/zio/zio-schema/issues/754",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 511,
+                "deps": [],
+                "title": "Unable to convert to TypedValue ",
+                "url": "https://github.com/zio/zio-schema/issues/511",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$175",
+                "issue_id": 655,
+                "deps": [],
+                "title": "Schema deterministic hashcode for DynamicValue",
+                "url": "https://github.com/zio/zio-schema/issues/655",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 480,
+                "deps": [],
+                "title": "Improve DynamicValue error handling",
+                "url": "https://github.com/zio/zio-schema/issues/480",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 712,
+                "deps": [],
+                "title": "JsonCodec decoder accepts malformed JSON string with extra characters",
+                "url": "https://github.com/zio/zio-schema/issues/712",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 674,
+                "deps": [],
+                "title": "Unable to publishLocal on Windows 11 using Scala 3",
+                "url": "https://github.com/zio/zio-schema/issues/674",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-http": {
+            "description": "Placeholder description for zio-http",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-http",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 3472,
+                "deps": [],
+                "title": "Split into multiple modules",
+                "url": "https://github.com/zio/zio-http/issues/3472",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 3141,
+                "deps": [],
+                "title": "ClassCassException when using HandlerAspect and Path parameters.",
+                "url": "https://github.com/zio/zio-http/issues/3141",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 1996,
+                "deps": [],
+                "title": "Add support for Happy Eyeballs",
+                "url": "https://github.com/zio/zio-http/issues/1996",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 2280,
+                "deps": [],
+                "title": "NoRouteToHostException when making a request to https url from a zio-http Client using Scala 3",
+                "url": "https://github.com/zio/zio-http/issues/2280",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 3235,
+                "deps": [],
+                "title": "Missing Authorization header is reported as 400 instead of 401",
+                "url": "https://github.com/zio/zio-http/issues/3235",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 3133,
+                "deps": [],
+                "title": "Flag ZClient.request as deprecated",
+                "url": "https://github.com/zio/zio-http/issues/3133",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-jdbc": {
+            "description": "Placeholder description for zio-jdbc",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-jdbc",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 144,
+                "deps": [],
+                "title": "Replace Schema-based derivation of encoder / decoder with ZIO Schema Deriver-based derivation",
+                "url": "https://github.com/zio/zio-jdbc/issues/144",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 74,
+                "deps": [],
+                "title": "Effectively leverage typed errors by defining precise sealed hierarchy of errors",
+                "url": "https://github.com/zio/zio-jdbc/issues/74",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 54,
+                "deps": [],
+                "title": "Support use of JTA transaction ?",
+                "url": "https://github.com/zio/zio-jdbc/issues/54",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 83,
+                "deps": [],
+                "title": "Support `JdbcEncoder` when using `Segment.Param`",
+                "url": "https://github.com/zio/zio-jdbc/issues/83",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "izumi-reflect": {
+            "description": "Placeholder description for izumi-reflect",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/izumi-reflect",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$750",
+                "issue_id": 481,
+                "deps": [],
+                "title": "Subtype relation for refined type fails",
+                "url": "https://github.com/zio/izumi-reflect/issues/481",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 350,
+                "deps": [],
+                "title": "Granular complile-time caches for Scala 2 and 3",
+                "url": "https://github.com/zio/izumi-reflect/issues/350",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 379,
+                "deps": [],
+                "title": "Better lambda normal form",
+                "url": "https://github.com/zio/izumi-reflect/issues/379",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 404,
+                "deps": [],
+                "title": "Support TagMacro parameter substitution for polymorphic function types on Scala 3",
+                "url": "https://github.com/zio/izumi-reflect/issues/404",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-json": {
+            "description": "Placeholder description for zio-json",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-json",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$100",
+                "issue_id": 1090,
+                "deps": [],
+                "title": "zio-json-macros for Scala 3",
+                "url": "https://github.com/zio/zio-json/issues/1090",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 1071,
+                "deps": [],
+                "title": "Error when reading json array file?",
+                "url": "https://github.com/zio/zio-json/issues/1071",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-cli": {
+            "description": "Placeholder description for zio-cli",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-cli",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 191,
+                "deps": [],
+                "title": "Add support for reading command-line options from file(s)",
+                "url": "https://github.com/zio/zio-cli/issues/191",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "zio-blocks": {
+            "description": "Placeholder description for zio-blocks",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ZIO/zio-blocks",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$4,000",
+                "issue_id": 519,
+                "deps": [],
+                "title": "Schema Migration System for ZIO Schema 2",
+                "url": "https://github.com/zio/zio-blocks/issues/519",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "tscircuit": {
+      "org_handle": "tscircuit",
+      "open_bounty_count": 41,
+      "open_bounties_total_value_usd": 2865.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 22,
+        "total_project_bounty_repos": 22,
+        "repo_list": {
+          "tscircuit": {
+            "description": "Placeholder description for tscircuit",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/tscircuit",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 786,
+                "deps": [],
+                "title": "Support Capacitive Touch Slider element, add solvermask support to smtpad, document capacitive touch element",
+                "url": "https://github.com/tscircuit/tscircuit/issues/786",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 895,
+                "deps": [],
+                "title": "Pinout Diagram Improvements",
+                "url": "https://github.com/tscircuit/tscircuit/issues/895",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 328,
+                "deps": [],
+                "title": "Build the Arduino Nano with tscircuit",
+                "url": "https://github.com/tscircuit/tscircuit/issues/328",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 1081,
+                "deps": [],
+                "title": "Make sure kicad component components create courtyards",
+                "url": "https://github.com/tscircuit/tscircuit/issues/1081",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 939,
+                "deps": [],
+                "title": "Figure out why documentation isn't rendering reference designators",
+                "url": "https://github.com/tscircuit/tscircuit/issues/939",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 1130,
+                "deps": [],
+                "title": "Change of color on hover for traces are missing",
+                "url": "https://github.com/tscircuit/tscircuit/issues/1130",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "pcb-viewer": {
+            "description": "Placeholder description for pcb-viewer",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/pcb-viewer",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$150",
+                "issue_id": 419,
+                "deps": [],
+                "title": "Texture Support (PCB should have texture on box)",
+                "url": "https://github.com/tscircuit/pcb-viewer/issues/419",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 106,
+                "deps": [],
+                "title": "Allow manual editing of board size (if specified in width/height)",
+                "url": "https://github.com/tscircuit/pcb-viewer/issues/106",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$20",
+                "issue_id": 84,
+                "deps": [],
+                "title": "Silkscreen lines don't move when applying manual edit events",
+                "url": "https://github.com/tscircuit/pcb-viewer/issues/84",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$5",
+                "issue_id": 127,
+                "deps": [],
+                "title": "rerunning on snippets does not persists that I want to display bottom layer",
+                "url": "https://github.com/tscircuit/pcb-viewer/issues/127",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$3",
+                "issue_id": 163,
+                "deps": [],
+                "title": "Remove `disableAutoFocus` in favor of `focusOnHover={false}`",
+                "url": "https://github.com/tscircuit/pcb-viewer/issues/163",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "unravel-autorouter": {
+            "description": "Placeholder description for unravel-autorouter",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/unravel-autorouter",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$150",
+                "issue_id": 66,
+                "deps": [],
+                "title": "Implement trace thickness as a parameter",
+                "url": "https://github.com/tscircuit/unravel-autorouter/issues/66",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$70",
+                "issue_id": 61,
+                "deps": [],
+                "title": "Introduce Caching for HyperHighDensitySolver",
+                "url": "https://github.com/tscircuit/unravel-autorouter/issues/61",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$70",
+                "issue_id": 63,
+                "deps": [],
+                "title": "Multi-section Unravel Stage seems to do many more iterations than required, there are no graphs of loss to help guide hyper parameter adjustment",
+                "url": "https://github.com/tscircuit/unravel-autorouter/issues/63",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$40",
+                "issue_id": 102,
+                "deps": [],
+                "title": "Convert the SegmentTree to be able to use an rbush or flattree spatial index",
+                "url": "https://github.com/tscircuit/unravel-autorouter/issues/102",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "schematic-trace-solver": {
+            "description": "Placeholder description for schematic-trace-solver",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/schematic-trace-solver",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$100",
+                "issue_id": 29,
+                "deps": [],
+                "title": "New Phase To combine same-net trace segments that are close together",
+                "url": "https://github.com/tscircuit/schematic-trace-solver/issues/29",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 34,
+                "deps": [],
+                "title": "Merge same-net trace lines that are close together (make at the same Y or same X)",
+                "url": "https://github.com/tscircuit/schematic-trace-solver/issues/34",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 78,
+                "deps": [],
+                "title": "Fix extra trace lines in post-processing step",
+                "url": "https://github.com/tscircuit/schematic-trace-solver/issues/78",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 79,
+                "deps": [],
+                "title": "Fix extra net label in repro61, or remove trace",
+                "url": "https://github.com/tscircuit/schematic-trace-solver/issues/79",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "3d-viewer": {
+            "description": "Placeholder description for 3d-viewer",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/3d-viewer",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$5",
+                "issue_id": 93,
+                "deps": [],
+                "title": "Improve 3d model loading to avoid laggy browser",
+                "url": "https://github.com/tscircuit/3d-viewer/issues/93",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$5",
+                "issue_id": 94,
+                "deps": [],
+                "title": "Hovering over tooltips causes major slowdown on 3d viewer, probably due to \"overrendering\"",
+                "url": "https://github.com/tscircuit/3d-viewer/issues/94",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "tscircuit.com": {
+            "description": "Placeholder description for tscircuit.com",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/tscircuit.com",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$30",
+                "issue_id": 1024,
+                "deps": [],
+                "title": "Can't download fabrication files from editor",
+                "url": "https://github.com/tscircuit/tscircuit.com/issues/1024",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$8",
+                "issue_id": 712,
+                "deps": [],
+                "title": "Moving from the `preview` page to `editor` doesn't refresh",
+                "url": "https://github.com/tscircuit/tscircuit.com/issues/712",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "easyeda-converter": {
+            "description": "Placeholder description for easyeda-converter",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/easyeda-converter",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$30",
+                "issue_id": 123,
+                "deps": [],
+                "title": "cadModel positionOffset axis are not calculated correctly when importing from jlcpcb",
+                "url": "https://github.com/tscircuit/easyeda-converter/issues/123",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$10",
+                "issue_id": 195,
+                "deps": [],
+                "title": "[C5248081] Failed to import from JLCPCB",
+                "url": "https://github.com/tscircuit/easyeda-converter/issues/195",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "matchpack": {
+            "description": "Placeholder description for matchpack",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/matchpack",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 15,
+                "deps": [],
+                "title": "Specialized Layout for Decoupling Capacitors",
+                "url": "https://github.com/tscircuit/matchpack/issues/15",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 12,
+                "deps": [],
+                "title": "Propose/implement a solution to bad layout",
+                "url": "https://github.com/tscircuit/matchpack/issues/12",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "autorouting": {
+            "description": "Placeholder description for autorouting",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/autorouting",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 92,
+                "deps": [],
+                "title": "Multilayer Ijump: Remove wild trace jumps",
+                "url": "https://github.com/tscircuit/autorouting/issues/92",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "freerouting": {
+            "description": "Placeholder description for freerouting",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/freerouting",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 388,
+                "deps": [],
+                "title": "Get in-progress traces using API",
+                "url": "https://github.com/freerouting/freerouting/issues/388",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "dsn-converter": {
+            "description": "Placeholder description for dsn-converter",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/dsn-converter",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$70",
+                "issue_id": 54,
+                "deps": [],
+                "title": "We can't convert Smoothie Board to Circuit JSON",
+                "url": "https://github.com/tscircuit/dsn-converter/issues/54",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "pver": {
+            "description": "Placeholder description for pver",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/pver",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$20",
+                "issue_id": 1,
+                "deps": [],
+                "title": "Figure out a way to commit to protected branches",
+                "url": "https://github.com/tscircuit/pver/issues/1",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "kicad-component-converter": {
+            "description": "Placeholder description for kicad-component-converter",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/kicad-component-converter",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 114,
+                "deps": [],
+                "title": "Fix the schematic view by also optionally accepting kicad_sym and converting into a schPortArrangement and pinLabels",
+                "url": "https://github.com/tscircuit/kicad-component-converter/issues/114",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "circuit-json-to-readable-netlist": {
+            "description": "Placeholder description for circuit-json-to-readable-netlist",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/circuit-json-to-readable-netlist",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$5",
+                "issue_id": 4,
+                "deps": [],
+                "title": "Undefined in readable netlists, pin labels are too short, just \"pin14\" instead of full pin labels",
+                "url": "https://github.com/tscircuit/circuit-json-to-readable-netlist/issues/4",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "pgstrap": {
+            "description": "Placeholder description for pgstrap",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/pgstrap",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$30",
+                "issue_id": 2,
+                "deps": [],
+                "title": "Use pglite so that postgres isn't required when generating types",
+                "url": "https://github.com/seveibar/pgstrap/issues/2",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "fake-algora": {
+            "description": "Placeholder description for fake-algora",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/fake-algora",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$10",
+                "issue_id": 1,
+                "deps": [],
+                "title": "Bootstrap w/ API for sending payment",
+                "url": "https://github.com/tscircuit/fake-algora/issues/1",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "prompt-benchmarks": {
+            "description": "Placeholder description for prompt-benchmarks",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/prompt-benchmarks",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$5",
+                "issue_id": 45,
+                "deps": [],
+                "title": "use the new auto generated docs in the system prompt",
+                "url": "https://github.com/tscircuit/prompt-benchmarks/issues/45",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "jscad-fiber": {
+            "description": "Placeholder description for jscad-fiber",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/jscad-fiber",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$4",
+                "issue_id": 79,
+                "deps": [],
+                "title": "Add coordinate axis helper in bottom right corner with JscadFixture",
+                "url": "https://github.com/tscircuit/jscad-fiber/issues/79",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "core": {
+            "description": "Placeholder description for core",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/core",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 1391,
+                "deps": [],
+                "title": "Implement relative-layout-mode `<constraint />` between groups",
+                "url": "https://github.com/tscircuit/core/issues/1391",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "rp2040-zero": {
+            "description": "Placeholder description for rp2040-zero",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/rp2040-zero",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 2,
+                "deps": [],
+                "title": "Finish the RP2040-zero board",
+                "url": "https://github.com/tscircuit/rp2040-zero/issues/2",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "circuit-json-to-step": {
+            "description": "Placeholder description for circuit-json-to-step",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/circuit-json-to-step",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 6,
+                "deps": [],
+                "title": "Determine why rectangles are missing in output",
+                "url": "https://github.com/tscircuit/circuit-json-to-step/issues/6",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "footprinter": {
+            "description": "Placeholder description for footprinter",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tscircuit/footprinter",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$25",
+                "issue_id": 386,
+                "deps": [],
+                "title": "Add support for qfn32",
+                "url": "https://github.com/tscircuit/footprinter/issues/386",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ProjectDiscovery": {
+      "org_handle": "projectdiscovery",
+      "open_bounty_count": 17,
+      "open_bounties_total_value_usd": 1727.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 6,
+        "total_project_bounty_repos": 6,
+        "repo_list": {
+          "nuclei": {
+            "description": "Placeholder description for nuclei",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/nuclei",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 6403,
+                "deps": [],
+                "title": "[FEATURE] Add honeypot detection to nuclei",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/6403",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 5838,
+                "deps": [],
+                "title": "XSS Context Analyzer",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/5838",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 6398,
+                "deps": [],
+                "title": "[BUG] Fuzzing templates skips numeric path parts",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/6398",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 5567,
+                "deps": [],
+                "title": "[FEATURE] Template Profile Improvements",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/5567",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 6674,
+                "deps": [],
+                "title": "Replace panic with error handling in template loader when dialers are missing",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/6674",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 6592,
+                "deps": [],
+                "title": "[BUG] Authenticated scanning starts executing templates before the secret-file template finishes",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/6592",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 6532,
+                "deps": [],
+                "title": "Integrate typos tool into CI",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/6532",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 2063,
+                "deps": [],
+                "title": "Add PDF export option",
+                "url": "https://github.com/projectdiscovery/nuclei/issues/2063",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "katana": {
+            "description": "Placeholder description for katana",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/katana",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 1367,
+                "deps": [],
+                "title": "Feature / Question: go-tree-sitter dependency",
+                "url": "https://github.com/projectdiscovery/katana/issues/1367",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 611,
+                "deps": [],
+                "title": "`-jsonl` option with `-headless` option results in error",
+                "url": "https://github.com/projectdiscovery/katana/issues/611",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$1",
+                "issue_id": 1471,
+                "deps": [],
+                "title": "release katana v1.3.0",
+                "url": "https://github.com/projectdiscovery/katana/issues/1471",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "subfinder": {
+            "description": "Placeholder description for subfinder",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/subfinder",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$75",
+                "issue_id": 1434,
+                "deps": [],
+                "title": "[Issue] The `rl,rls` options are not supported",
+                "url": "https://github.com/projectdiscovery/subfinder/issues/1434",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$1",
+                "issue_id": 1693,
+                "deps": [],
+                "title": "test - pls ignore",
+                "url": "https://github.com/projectdiscovery/subfinder/issues/1693",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "tlsx": {
+            "description": "Placeholder description for tlsx",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/tlsx",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$100",
+                "issue_id": 819,
+                "deps": [],
+                "title": "tlsx hangs indefinitely for some hosts",
+                "url": "https://github.com/projectdiscovery/tlsx/issues/819",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$75",
+                "issue_id": 859,
+                "deps": [],
+                "title": "-l -list option does not understand multiple prefixes, comma-separated in a single line",
+                "url": "https://github.com/projectdiscovery/tlsx/issues/859",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "httpx": {
+            "description": "Placeholder description for httpx",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/httpx",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$100",
+                "issue_id": 2240,
+                "deps": [],
+                "title": "-pr http11 flag is ignored on retryablehttp-go due to HTTP/2 fallback",
+                "url": "https://github.com/projectdiscovery/httpx/issues/2240",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "dnsx": {
+            "description": "Placeholder description for dnsx",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/projectdiscovery/dnsx",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$100",
+                "issue_id": 924,
+                "deps": [],
+                "title": "Support auto wildcard detection similar to PureDNS",
+                "url": "https://github.com/projectdiscovery/dnsx/issues/924",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "SigNoz": {
+      "org_handle": "SigNoz",
+      "open_bounty_count": 7,
+      "open_bounties_total_value_usd": 1300.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "signoz": {
+            "description": "Placeholder description for signoz",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/SigNoz/signoz",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 6023,
+                "deps": [],
+                "title": "[Dashboard] cert-manager ",
+                "url": "https://github.com/SigNoz/signoz/issues/6023",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 6010,
+                "deps": [],
+                "title": "[Dashboard Request] Elasticsearch Monitoring Dashboard",
+                "url": "https://github.com/SigNoz/signoz/issues/6010",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 6025,
+                "deps": [],
+                "title": "[Dashboard] Istio based on prometheus",
+                "url": "https://github.com/SigNoz/signoz/issues/6025",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 6028,
+                "deps": [],
+                "title": "[Dashboard] Kong Gateway",
+                "url": "https://github.com/SigNoz/signoz/issues/6028",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 5996,
+                "deps": [],
+                "title": "[Dashboard Request] ASP .NET Metrics Dashboard",
+                "url": "https://github.com/SigNoz/signoz/issues/5996",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 6026,
+                "deps": [],
+                "title": "[Dashboard Request] Kafka Server Monitoring",
+                "url": "https://github.com/SigNoz/signoz/issues/6026",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 6036,
+                "deps": [],
+                "title": "[Dashboard Request] AWS MSK Cluster",
+                "url": "https://github.com/SigNoz/signoz/issues/6036",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Cal.com, Inc.": {
+      "org_handle": "cal",
+      "open_bounty_count": 7,
+      "open_bounties_total_value_usd": 595.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "cal.com": {
+            "description": "Placeholder description for cal.com",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/cal/cal.com",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 5756,
+                "deps": [],
+                "title": "Proton Calendar Integration",
+                "url": "https://github.com/calcom/cal.com/issues/5756",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 16378,
+                "deps": [],
+                "title": "[CAL-4531] Take into account guest's availability when rescheduling",
+                "url": "https://github.com/calcom/cal.com/issues/16378",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 1985,
+                "deps": [],
+                "title": "[CAL-3105] BigBlueButton Integration",
+                "url": "https://github.com/calcom/cal.com/issues/1985",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 18987,
+                "deps": [],
+                "title": "[CAL-5097] add the same \"booking questions\" to routing forms",
+                "url": "https://github.com/calcom/cal.com/issues/18987",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 18992,
+                "deps": [],
+                "title": "[CAL-5107] add no-show to zapier (its a webhook only right now)",
+                "url": "https://github.com/calcom/cal.com/issues/18992",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 18947,
+                "deps": [],
+                "title": "[CAL-5091] additional settings: \"add team member as optional guest",
+                "url": "https://github.com/calcom/cal.com/issues/18947",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$20",
+                "issue_id": 13532,
+                "deps": [],
+                "title": "[CAL-3076] allow emails and invite people to a team event-type directly from \"assignment\" if not in team yet",
+                "url": "https://github.com/calcom/cal.com/issues/13532",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Rosenpass": {
+      "org_handle": "rosenpass",
+      "open_bounty_count": 6,
+      "open_bounties_total_value_usd": 790.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "rosenpass": {
+            "description": "Placeholder description for rosenpass",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/rosenpass/rosenpass",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$150",
+                "issue_id": 79,
+                "deps": [],
+                "title": "Network manager support: Open vSwitch",
+                "url": "https://github.com/rosenpass/rosenpass/issues/79",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 80,
+                "deps": [],
+                "title": "Network manager support: netctl",
+                "url": "https://github.com/rosenpass/rosenpass/issues/80",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 81,
+                "deps": [],
+                "title": "Network manager support: systemd-networkd",
+                "url": "https://github.com/rosenpass/rosenpass/issues/81",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 82,
+                "deps": [],
+                "title": "Network manager support: ConnMan",
+                "url": "https://github.com/rosenpass/rosenpass/issues/82",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$150",
+                "issue_id": 83,
+                "deps": [],
+                "title": "Network manager support: NetworkManager",
+                "url": "https://github.com/rosenpass/rosenpass/issues/83",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$40",
+                "issue_id": 164,
+                "deps": [],
+                "title": "Refactor used functions with destination parameters to use rosenpass-to",
+                "url": "https://github.com/rosenpass/rosenpass/issues/164",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Tuist": {
+      "org_handle": "tuist",
+      "open_bounty_count": 5,
+      "open_bounties_total_value_usd": 1e+3,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "tuist": {
+            "description": "Placeholder description for tuist",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/tuist/tuist",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 6048,
+                "deps": [],
+                "title": "Support for `.xcstrings` catalog",
+                "url": "https://github.com/tuist/tuist/issues/6048",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$300",
+                "issue_id": 6456,
+                "deps": [],
+                "title": "Generate Objective C resources for internal targets",
+                "url": "https://github.com/tuist/tuist/issues/6456",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 5920,
+                "deps": [],
+                "title": "Add support for building, running, and testing multi-platform targets",
+                "url": "https://github.com/tuist/tuist/issues/5920",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 5925,
+                "deps": [],
+                "title": "TargetScript output files are ignored if the files don't exist at generate time",
+                "url": "https://github.com/tuist/tuist/issues/5925",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 268,
+                "deps": [],
+                "title": "Add support for customizing project groups",
+                "url": "https://github.com/tuist/tuist/issues/268",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Arakoo.ai": {
+      "org_handle": "arakoodev",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 280.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "EdgeChains": {
+            "description": "Placeholder description for EdgeChains",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/arakoodev/EdgeChains",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 286,
+                "deps": [],
+                "title": "BOUNTY: Convert the endpoints to a smart router like litellm does in python",
+                "url": "https://github.com/arakoodev/EdgeChains/issues/286",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 273,
+                "deps": [],
+                "title": "BOUNTY: add support for qdrant vector database in javascript sdk",
+                "url": "https://github.com/arakoodev/EdgeChains/issues/273",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 279,
+                "deps": [],
+                "title": "BOUNTY: add support for Google Palm2 API in javascript/typescript",
+                "url": "https://github.com/arakoodev/EdgeChains/issues/279",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$25",
+                "issue_id": 290,
+                "deps": [],
+                "title": "BOUNTY: integrate AWS Comprehend as a utility to redact data",
+                "url": "https://github.com/arakoodev/EdgeChains/issues/290",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Permify.co": {
+      "org_handle": "Permify",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 1050.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 2,
+        "total_project_bounty_repos": 2,
+        "repo_list": {
+          "permify": {
+            "description": "Placeholder description for permify",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Permify/permify",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$400",
+                "issue_id": 146,
+                "deps": [],
+                "title": "Creating CLI for managing Permify instances & Run Permify main functionalities",
+                "url": "https://github.com/Permify/permify/issues/146",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 837,
+                "deps": [],
+                "title": "Enhancing the 'Coverage' Command for Detailed Action/Permission Conditions",
+                "url": "https://github.com/Permify/permify/issues/837",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 838,
+                "deps": [],
+                "title": "Refinement of Schema Files: Integrating Scenario-Specific Relationships and Attributes",
+                "url": "https://github.com/Permify/permify/issues/838",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "permify-cli": {
+            "description": "Placeholder description for permify-cli",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Permify/permify-cli",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 2,
+                "deps": [],
+                "title": "Endpoint, Token, Cert Path, and Cert Key Storage for CLI Tool",
+                "url": "https://github.com/Permify/permify-cli/issues/2",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Weaviate": {
+      "org_handle": "weaviate",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 1e+3,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "weaviate": {
+            "description": "Placeholder description for weaviate",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/weaviate/weaviate",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 3868,
+                "deps": [],
+                "title": "NearVector Search Returns Non-Existing Objects",
+                "url": "https://github.com/weaviate/weaviate/issues/3868",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$300",
+                "issue_id": 3683,
+                "deps": [],
+                "title": "[Feature Request] Add \"Not\" operator in filter to support \"Not Like\" etc. in Get queries",
+                "url": "https://github.com/weaviate/weaviate/issues/3683",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 2567,
+                "deps": [],
+                "title": "[new feature] Highlighting ",
+                "url": "https://github.com/weaviate/weaviate/issues/2567",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 2496,
+                "deps": [],
+                "title": "Return vectorized query with results",
+                "url": "https://github.com/weaviate/weaviate/issues/2496",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Highlight (YC W23)": {
+      "org_handle": "highlight",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 670.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "highlight": {
+            "description": "Placeholder description for highlight",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/highlight/highlight",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 6775,
+                "deps": [],
+                "title": "Performance of canvas snapshotting on Safari is poor",
+                "url": "https://github.com/highlight/highlight/issues/6775",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 8614,
+                "deps": [],
+                "title": "update design of integrations page",
+                "url": "https://github.com/highlight/highlight/issues/8614",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 8635,
+                "deps": [],
+                "title": "Update workspace and project settings to not use antd components",
+                "url": "https://github.com/highlight/highlight/issues/8635",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$20",
+                "issue_id": 8032,
+                "deps": [],
+                "title": "document sveltekit backend instrumentation",
+                "url": "https://github.com/highlight/highlight/issues/8032",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "potpie.ai": {
+      "org_handle": "potpie-ai",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 90.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "potpie": {
+            "description": "Placeholder description for potpie",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/potpie-ai/potpie",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 222,
+                "deps": [],
+                "title": "Support multiple LLMs through Litellm",
+                "url": "https://github.com/potpie-ai/potpie/issues/222",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$20",
+                "issue_id": 221,
+                "deps": [],
+                "title": "Incremental Knowledge Graph updates",
+                "url": "https://github.com/potpie-ai/potpie/issues/221",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$10",
+                "issue_id": 223,
+                "deps": [],
+                "title": "Implement inference caching while knowledge graph generation ",
+                "url": "https://github.com/potpie-ai/potpie/issues/223",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$10",
+                "issue_id": 224,
+                "deps": [],
+                "title": "Create a CLI for using potpie locally ",
+                "url": "https://github.com/potpie-ai/potpie/issues/224",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Mudlet": {
+      "org_handle": "Mudlet",
+      "open_bounty_count": 4,
+      "open_bounties_total_value_usd": 1280.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "Mudlet": {
+            "description": "Placeholder description for Mudlet",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Mudlet/Mudlet",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$1,000",
+                "issue_id": 8030,
+                "deps": [],
+                "title": "Split Mudlet up into `libmudlet` and a Qt front-end",
+                "url": "https://github.com/Mudlet/Mudlet/issues/8030",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$200",
+                "issue_id": 689,
+                "deps": [],
+                "title": "Support telnet:// links",
+                "url": "https://github.com/Mudlet/Mudlet/issues/689",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 3172,
+                "deps": [],
+                "title": "generic mapper: add video walkthrough on how to set it up",
+                "url": "https://github.com/Mudlet/Mudlet/issues/3172",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 5310,
+                "deps": [],
+                "title": "Autocomplete steals window focus, prevents further typing",
+                "url": "https://github.com/Mudlet/Mudlet/issues/5310",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Speakers in Tech": {
+      "org_handle": "speakers-in-tech",
+      "open_bounty_count": 3,
+      "open_bounties_total_value_usd": 30.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "conference-data": {
+            "description": "Placeholder description for conference-data",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/speakers-in-tech/conference-data",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$10",
+                "issue_id": 4,
+                "deps": [],
+                "title": "Add ScalaDays to conference data tracker",
+                "url": "https://github.com/speakers-in-tech/conference-data/issues/4",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$10",
+                "issue_id": 11,
+                "deps": [],
+                "title": "Add QCon to the conference data tracker",
+                "url": "https://github.com/speakers-in-tech/conference-data/issues/11",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$10",
+                "issue_id": 10,
+                "deps": [],
+                "title": "Add CodeMash to the conference data tracker",
+                "url": "https://github.com/speakers-in-tech/conference-data/issues/10",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Seated": {
+      "org_handle": "Seated",
+      "open_bounty_count": 3,
+      "open_bounties_total_value_usd": 110.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "drizzle-orm": {
+            "description": "Placeholder description for drizzle-orm",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Seated/drizzle-orm",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 376,
+                "deps": [],
+                "title": "Add proper error handling and wrapping",
+                "url": "https://github.com/drizzle-team/drizzle-orm/issues/376",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 554,
+                "deps": [],
+                "title": "Allow wrapping the column in custom SQL for custom types",
+                "url": "https://github.com/drizzle-team/drizzle-orm/issues/554",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 1083,
+                "deps": [],
+                "title": "[FEATURE]: Default select for custom types",
+                "url": "https://github.com/drizzle-team/drizzle-orm/issues/1083",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Keep (YC W23)": {
+      "org_handle": "keephq",
+      "open_bounty_count": 3,
+      "open_bounties_total_value_usd": 280.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "keep": {
+            "description": "Placeholder description for keep",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/keephq/keep",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 2112,
+                "deps": [],
+                "title": "[🔌 Provider]: SNMP provider",
+                "url": "https://github.com/keephq/keep/issues/2112",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 3526,
+                "deps": [],
+                "title": "[🔌 Provider]: Solarwinds",
+                "url": "https://github.com/keephq/keep/issues/3526",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 3960,
+                "deps": [],
+                "title": "[🔌 Provider]: Nagios Provider",
+                "url": "https://github.com/keephq/keep/issues/3960",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Activepieces (YC S22)": {
+      "org_handle": "activepieces",
+      "open_bounty_count": 3,
+      "open_bounties_total_value_usd": 4e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "activepieces": {
+            "description": "Placeholder description for activepieces",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/activepieces/activepieces",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 8072,
+                "deps": [],
+                "title": "[MCP] Gmail",
+                "url": "https://github.com/activepieces/activepieces/issues/8072",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 8135,
+                "deps": [],
+                "title": "[MCP] Canva",
+                "url": "https://github.com/activepieces/activepieces/issues/8135",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$100",
+                "issue_id": 8284,
+                "deps": [],
+                "title": "[MCP] Klaviyo",
+                "url": "https://github.com/activepieces/activepieces/issues/8284",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "PHPOffice": {
+      "org_handle": "PHPOffice",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 90.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 2,
+        "total_project_bounty_repos": 2,
+        "repo_list": {
+          "PHPPresentation": {
+            "description": "Placeholder description for PHPPresentation",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/PHPOffice/PHPPresentation",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$40",
+                "issue_id": 48,
+                "deps": [],
+                "title": "Reader / Writer for Keynote",
+                "url": "https://github.com/PHPOffice/PHPPresentation/issues/48",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          },
+          "PHPWord": {
+            "description": "Placeholder description for PHPWord",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/PHPOffice/PHPWord",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 69,
+                "deps": [],
+                "title": "Implement WPS Writer",
+                "url": "https://github.com/PHPOffice/PHPWord/issues/69",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Shelf": {
+      "org_handle": "Shelf-nu",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 70.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "shelf.nu": {
+            "description": "Placeholder description for shelf.nu",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Shelf-nu/shelf.nu",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$40",
+                "issue_id": 461,
+                "deps": [],
+                "title": "[Feature request]: Administrator requires a custodian to read and sign a document when assigning long term custody",
+                "url": "https://github.com/Shelf-nu/shelf.nu/issues/461",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$30",
+                "issue_id": 499,
+                "deps": [],
+                "title": "[Feature request]: Custodian electronically signs template document before receiving custody",
+                "url": "https://github.com/Shelf-nu/shelf.nu/issues/499",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Deskflow": {
+      "org_handle": "deskflow",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 7500.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "deskflow": {
+            "description": "Placeholder description for deskflow",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/deskflow/deskflow",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$5,000",
+                "issue_id": 8031,
+                "deps": [],
+                "title": "Clipboard support in XDG Desktop Portal (Wayland)",
+                "url": "https://github.com/deskflow/deskflow/issues/8031",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$2,500",
+                "issue_id": 8032,
+                "deps": [],
+                "title": "Persist Input Capture XDG Desktop Portal dialog (Wayland)",
+                "url": "https://github.com/deskflow/deskflow/issues/8032",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Outerbase (YC W23)": {
+      "org_handle": "outerbase",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 5e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "starbasedb": {
+            "description": "Placeholder description for starbasedb",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/outerbase/starbasedb",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 72,
+                "deps": [],
+                "title": "Replicate data from external source to internal source with a Plugin",
+                "url": "https://github.com/outerbase/starbasedb/issues/72",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$250",
+                "issue_id": 59,
+                "deps": [],
+                "title": "Database dumps do not work on large databases",
+                "url": "https://github.com/outerbase/starbasedb/issues/59",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "RocketRides": {
+      "org_handle": "rocketrides",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 3.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "webapp": {
+            "description": "Placeholder description for webapp",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/rocketrides/webapp",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$2",
+                "issue_id": 1222,
+                "deps": [],
+                "title": "Lorem ipsum",
+                "url": "https://github.com/acme-incorporated/webapp/issues/1222",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$1",
+                "issue_id": 34,
+                "deps": [],
+                "title": "Lorem ipsum",
+                "url": "https://github.com/rocketrides/webapp/issues/34",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Archestra": {
+      "org_handle": "archestra-ai",
+      "open_bounty_count": 2,
+      "open_bounties_total_value_usd": 950.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "archestra": {
+            "description": "Placeholder description for archestra",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/archestra-ai/archestra",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$900",
+                "issue_id": 1301,
+                "deps": [],
+                "title": "Support MCP Apps",
+                "url": "https://github.com/archestra-ai/archestra/issues/1301",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              },
+              {
+                "reward": "$50",
+                "issue_id": 2717,
+                "deps": [],
+                "title": "Configuration error while installing Google Workspace MCP",
+                "url": "https://github.com/archestra-ai/archestra/issues/2717",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Trigger.dev (YC W23)": {
+      "org_handle": "triggerdotdev",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 25.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "zod": {
+            "description": "Placeholder description for zod",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/triggerdotdev/zod",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$25",
+                "issue_id": 2654,
+                "deps": [],
+                "title": "Schema in object being inferred differently (and weirdly)",
+                "url": "https://github.com/colinhacks/zod/issues/2654",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "ZBD": {
+      "org_handle": "zbd",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 30.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "trigger.dev": {
+            "description": "Placeholder description for trigger.dev",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/zbd/trigger.dev",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$30",
+                "issue_id": 2,
+                "deps": [],
+                "title": "ZBD API Integration with Trigger.dev",
+                "url": "https://github.com/zebedeeio/trigger.dev/issues/2",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "PX4 Autopilot": {
+      "org_handle": "PX4",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 10.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "PX4-Autopilot": {
+            "description": "Placeholder description for PX4-Autopilot",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/PX4/PX4-Autopilot",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$10",
+                "issue_id": 19970,
+                "deps": [],
+                "title": "[Project Tracker] Sensor configuration display UI",
+                "url": "https://github.com/PX4/PX4-Autopilot/issues/19970",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Isaac": {
+      "org_handle": "isaac",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 850.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "isaac": {
+            "description": "Placeholder description for isaac",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/isaac/isaac",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$850",
+                "issue_id": 45,
+                "deps": [],
+                "title": "[ISAAC-497] Implement an enhanced RAG Pipeline for Scientific/Research Workflows",
+                "url": "https://github.com/aietal/isaac/issues/45",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Qdrant": {
+      "org_handle": "Qdrant",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 150.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "qdrant": {
+            "description": "Placeholder description for qdrant",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Qdrant/qdrant",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$150",
+                "issue_id": 3322,
+                "deps": [],
+                "title": "Per-collection metrics for Prometheus",
+                "url": "https://github.com/qdrant/qdrant/issues/3322",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Magnet.wtf": {
+      "org_handle": "Magnet-wtf",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 50.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "caley.io": {
+            "description": "Placeholder description for caley.io",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Magnet-wtf/caley.io",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 1,
+                "deps": [],
+                "title": "Multitenancy and Teams/Workspaces support",
+                "url": "https://github.com/Magnet-wtf/caley.io/issues/1",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "CommitGo, Inc.": {
+      "org_handle": "CommitGo",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 3e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "gitbutler": {
+            "description": "Placeholder description for gitbutler",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/CommitGo/gitbutler",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 2904,
+                "deps": [],
+                "title": "Gitea support",
+                "url": "https://github.com/gitbutlerapp/gitbutler/issues/2904",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Abby": {
+      "org_handle": "Abby",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 40.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "abby": {
+            "description": "Placeholder description for abby",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Abby/abby",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$40",
+                "issue_id": 68,
+                "deps": [],
+                "title": "Vue Integration",
+                "url": "https://github.com/tryabby/abby/issues/68",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Kyo": {
+      "org_handle": "getkyo",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 5e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "kyo": {
+            "description": "Placeholder description for kyo",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/getkyo/kyo",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$500",
+                "issue_id": 390,
+                "deps": [],
+                "title": "gRPC Support",
+                "url": "https://github.com/getkyo/kyo/issues/390",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Onyx (YC W24)": {
+      "org_handle": "onyx-dot-app",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 250.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "danswer": {
+            "description": "Placeholder description for danswer",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/onyx-dot-app/danswer",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 2281,
+                "deps": [],
+                "title": "Jira Service Management Connector",
+                "url": "https://github.com/danswer-ai/danswer/issues/2281",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Gitea": {
+      "org_handle": "go-gitea",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 3e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "gitea": {
+            "description": "Placeholder description for gitea",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/go-gitea/gitea",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$300",
+                "issue_id": 4898,
+                "deps": [],
+                "title": "Add inline comments on commits",
+                "url": "https://github.com/go-gitea/gitea/issues/4898",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Kaizen Solutions": {
+      "org_handle": "kaizen-solutions",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 250.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "kyo": {
+            "description": "Placeholder description for kyo",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/kaizen-solutions/kyo",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$250",
+                "issue_id": 390,
+                "deps": [],
+                "title": "gRPC Support",
+                "url": "https://github.com/getkyo/kyo/issues/390",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "BlockNote": {
+      "org_handle": "BlockNote",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 10.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "BlockNote": {
+            "description": "Placeholder description for BlockNote",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/BlockNote/BlockNote",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$10",
+                "issue_id": 1283,
+                "deps": [],
+                "title": "request suggestion menu mentions to support CompositionEvent for chinese input",
+                "url": "https://github.com/TypeCellOS/BlockNote/issues/1283",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Terrastruct": {
+      "org_handle": "terrastruct",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 50.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "d2": {
+            "description": "Placeholder description for d2",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/terrastruct/d2",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$50",
+                "issue_id": 1578,
+                "deps": [],
+                "title": "`shape: cycle`",
+                "url": "https://github.com/terrastruct/d2/issues/1578",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "mediar.ai": {
+      "org_handle": "mediar-ai",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 4e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "screenpipe": {
+            "description": "Placeholder description for screenpipe",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/mediar-ai/screenpipe",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$400",
+                "issue_id": 1626,
+                "deps": [],
+                "title": "[bounty] fix audio device randomly stopping sometimes",
+                "url": "https://github.com/mediar-ai/screenpipe/issues/1626",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Flyde": {
+      "org_handle": "flydelabs",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 15.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "flyde": {
+            "description": "Placeholder description for flyde",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/flydelabs/flyde",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$15",
+                "issue_id": 112,
+                "deps": [],
+                "title": "Broken imports after moving files",
+                "url": "https://github.com/flydelabs/flyde/issues/112",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Dieter Plaetinck": {
+      "org_handle": "Dieterbe",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 25.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "nocodb": {
+            "description": "Placeholder description for nocodb",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/Dieterbe/nocodb",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$25",
+                "issue_id": 11071,
+                "deps": [],
+                "title": "🔦 Feature: more compact card view on kanban board",
+                "url": "https://github.com/nocodb/nocodb/issues/11071",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Golem Cloud": {
+      "org_handle": "golemcloud",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 3500.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "golem-cli": {
+            "description": "Placeholder description for golem-cli",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/golemcloud/golem-cli",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$3,500",
+                "issue_id": 275,
+                "deps": [],
+                "title": "Incorporate MCP Server into Golem CLI",
+                "url": "https://github.com/golemcloud/golem-cli/issues/275",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Claper": {
+      "org_handle": "ClaperCo",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 150.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "Claper": {
+            "description": "Placeholder description for Claper",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/ClaperCo/Claper",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$150",
+                "issue_id": 143,
+                "deps": [],
+                "title": "Authelia OICD login fails due to missing state value",
+                "url": "https://github.com/ClaperCo/Claper/issues/143",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Twenty (YC S23)": {
+      "org_handle": "twentyhq",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 2500.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "unknown": {
+            "description": "Placeholder description for unknown",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/twentyhq/unknown",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$2,500",
+                "issue_id": 0,
+                "deps": [],
+                "title": "IMAP",
+                "url": "",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Coder": {
+      "org_handle": "coder",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 1.0,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "registry": {
+            "description": "Placeholder description for registry",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/coder/registry",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$1",
+                "issue_id": 51,
+                "deps": [],
+                "title": "Template for Module Development",
+                "url": "https://github.com/coder/registry/issues/51",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Rafael de la Fuente": {
+      "org_handle": "rafael-fuente",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 1e+3,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "diffractsim": {
+            "description": "Placeholder description for diffractsim",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/rafael-fuente/diffractsim",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$1,000",
+                "issue_id": 69,
+                "deps": [],
+                "title": "Vectorial EM field model",
+                "url": "https://github.com/rafael-fuente/diffractsim/issues/69",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Cap": {
+      "org_handle": "CapSoftware",
+      "open_bounty_count": 1,
+      "open_bounties_total_value_usd": 2e+2,
+      "last_updated": "2026-03-03T02:54:47-06:00",
+      "repositories": {
+        "total_project_repos": 1,
+        "total_project_bounty_repos": 1,
+        "repo_list": {
+          "Cap": {
+            "description": "Placeholder description for Cap",
+            "topics": [
+              "placeholder-topic-1",
+              "placeholder-topic-2"
+            ],
+            "url": "https://github.com/CapSoftware/Cap",
+            "maintainers": [
+              "placeholder_maintainer"
+            ],
+            "bounties": [
+              {
+                "reward": "$200",
+                "issue_id": 1540,
+                "deps": [],
+                "title": "Bounty: Deeplinks support + Raycast Extension",
+                "url": "https://github.com/CapSoftware/Cap/issues/1540",
+                "status": "open",
+                "metrics": {
+                  "comments": 0,
+                  "attempts": 0
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

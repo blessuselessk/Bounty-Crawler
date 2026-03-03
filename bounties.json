@@ -1,0 +1,1409 @@
+[
+  {
+    "reward_formatted": "$50",
+    "task.title": "Configuration error while installing Google Workspace MCP",
+    "org.name": "Archestra",
+    "org.handle": "archestra-ai",
+    "task.url": "https://github.com/archestra-ai/archestra/issues/2717"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Add PDF export option",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/2063"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "XSS Context Analyzer",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/5838"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Feature / Question: go-tree-sitter dependency",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/katana/issues/1367"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "[FEATURE] Template Profile Improvements",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/5567"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "[FEATURE] Add honeypot detection to nuclei",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/6403"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Support auto wildcard detection similar to PureDNS",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/dnsx/issues/924"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "tlsx hangs indefinitely for some hosts",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/tlsx/issues/819"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "-pr http11 flag is ignored on retryablehttp-go due to HTTP/2 fallback",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/httpx/issues/2240"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "[BUG] Authenticated scanning starts executing templates before the secret-file template finishes",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/6592"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "[BUG] Fuzzing templates skips numeric path parts",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/6398"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Replace panic with error handling in template loader when dialers are missing",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/6674"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Integrate typos tool into CI",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/nuclei/issues/6532"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "`-jsonl` option with `-headless` option results in error",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/katana/issues/611"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "[Issue] The `rl,rls` options are not supported",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/subfinder/issues/1434"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "-l -list option does not understand multiple prefixes, comma-separated in a single line",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/tlsx/issues/859"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Bounty: Deeplinks support + Raycast Extension",
+    "org.name": "Cap",
+    "org.handle": "CapSoftware",
+    "task.url": "https://github.com/CapSoftware/Cap/issues/1540"
+  },
+  {
+    "reward_formatted": "$1",
+    "task.title": "test - pls ignore",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/subfinder/issues/1693"
+  },
+  {
+    "reward_formatted": "$4,000",
+    "task.title": "Schema Migration System for ZIO Schema 2",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-blocks/issues/519"
+  },
+  {
+    "reward_formatted": "$1,000",
+    "task.title": "Vectorial EM field model",
+    "org.name": "Rafael de la Fuente",
+    "org.handle": "rafael-fuente",
+    "task.url": "https://github.com/rafael-fuente/diffractsim/issues/69"
+  },
+  {
+    "reward_formatted": "$1",
+    "task.title": "release katana v1.3.0",
+    "org.name": "ProjectDiscovery",
+    "org.handle": "projectdiscovery",
+    "task.url": "https://github.com/projectdiscovery/katana/issues/1471"
+  },
+  {
+    "reward_formatted": "$900",
+    "task.title": "Support MCP Apps",
+    "org.name": "Archestra",
+    "org.handle": "archestra-ai",
+    "task.url": "https://github.com/archestra-ai/archestra/issues/1301"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Change of color on hover for traces are missing",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/1130"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Texture Support (PCB should have texture on box)",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pcb-viewer/issues/419"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Make sure kicad component components create courtyards",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/1081"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Add support for qfn32",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/footprinter/issues/386"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Fix extra net label in repro61, or remove trace",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/schematic-trace-solver/issues/79"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Fix extra trace lines in post-processing step",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/schematic-trace-solver/issues/78"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Figure out why documentation isn't rendering reference designators",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/939"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Determine why rectangles are missing in output",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/circuit-json-to-step/issues/6"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Pinout Diagram Improvements",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/895"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Finish the RP2040-zero board",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/rp2040-zero/issues/2"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Implement relative-layout-mode `<constraint />` between groups",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/core/issues/1391"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Support Capacitive Touch Slider element, add solvermask support to smtpad, document capacitive touch element",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/786"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Specialized Layout for Decoupling Capacitors",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/matchpack/issues/15"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Merge same-net trace lines that are close together (make at the same Y or same X)",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/schematic-trace-solver/issues/34"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Propose/implement a solution to bad layout",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/matchpack/issues/12"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "New Phase To combine same-net trace segments that are close together",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/schematic-trace-solver/issues/29"
+  },
+  {
+    "reward_formatted": "$1,000",
+    "task.title": "Split Mudlet up into `libmudlet` and a Qt front-end",
+    "org.name": "Mudlet",
+    "org.handle": "Mudlet",
+    "task.url": "https://github.com/Mudlet/Mudlet/issues/8030"
+  },
+  {
+    "reward_formatted": "$1",
+    "task.title": "Template for Module Development",
+    "org.name": "Coder",
+    "org.handle": "coder",
+    "task.url": "https://github.com/coder/registry/issues/51"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Split into multiple modules",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/3472"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "[MCP] Klaviyo",
+    "org.name": "Activepieces (YC S22)",
+    "org.handle": "activepieces",
+    "task.url": "https://github.com/activepieces/activepieces/issues/8284"
+  },
+  {
+    "reward_formatted": "$2,500",
+    "task.title": "IMAP",
+    "org.name": "Twenty (YC S23)",
+    "org.handle": "twentyhq",
+    "task.url": null
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "[MCP] Canva",
+    "org.name": "Activepieces (YC S22)",
+    "org.handle": "activepieces",
+    "task.url": "https://github.com/activepieces/activepieces/issues/8135"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[MCP] Gmail",
+    "org.name": "Activepieces (YC S22)",
+    "org.handle": "activepieces",
+    "task.url": "https://github.com/activepieces/activepieces/issues/8072"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Authelia OICD login fails due to missing state value",
+    "org.name": "Claper",
+    "org.handle": "ClaperCo",
+    "task.url": "https://github.com/ClaperCo/Claper/issues/143"
+  },
+  {
+    "reward_formatted": "$3,500",
+    "task.title": "Incorporate MCP Server into Golem CLI",
+    "org.name": "Golem Cloud",
+    "org.handle": "golemcloud",
+    "task.url": "https://github.com/golemcloud/golem-cli/issues/275"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "ZStreams buffer(1) is buffering 2.",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9810"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "improved `Queue` shutdown functionality",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9844"
+  },
+  {
+    "reward_formatted": "$850",
+    "task.title": "ZScheduler parks+unparks workers too frequently",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9878"
+  },
+  {
+    "reward_formatted": "$750",
+    "task.title": "Can Fiber(Runtime) and Promise be merged?",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9877"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Handling errors allows recovering from defects",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9874"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Scala Native `WeakConcurrentBag` NPE when forking 10K fibers",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9681"
+  },
+  {
+    "reward_formatted": "$400",
+    "task.title": "Create test suite that tests the correct behaviour of `ZIOApp`",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9909"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "🔦 Feature: more compact card view on kanban board",
+    "org.name": "Dieter Plaetinck",
+    "org.handle": "Dieterbe",
+    "task.url": "https://github.com/nocodb/nocodb/issues/11071"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "[C5248081] Failed to import from JLCPCB",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/easyeda-converter/issues/195"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "Can't download fabrication files from editor",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit.com/issues/1024"
+  },
+  {
+    "reward_formatted": "$40",
+    "task.title": "Convert the SegmentTree to be able to use an rbush or flattree spatial index",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/unravel-autorouter/issues/102"
+  },
+  {
+    "reward_formatted": "$1",
+    "task.title": "Lorem ipsum",
+    "org.name": "RocketRides",
+    "org.handle": "rocketrides",
+    "task.url": "https://github.com/rocketrides/webapp/issues/34"
+  },
+  {
+    "reward_formatted": "$2",
+    "task.title": "Lorem ipsum",
+    "org.name": "RocketRides",
+    "org.handle": "rocketrides",
+    "task.url": "https://github.com/acme-incorporated/webapp/issues/1222"
+  },
+  {
+    "reward_formatted": "$15",
+    "task.title": "Broken imports after moving files",
+    "org.name": "Flyde",
+    "org.handle": "flydelabs",
+    "task.url": "https://github.com/flydelabs/flyde/issues/112"
+  },
+  {
+    "reward_formatted": "$4",
+    "task.title": "Add coordinate axis helper in bottom right corner with JscadFixture",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/jscad-fiber/issues/79"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Implement trace thickness as a parameter",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/unravel-autorouter/issues/66"
+  },
+  {
+    "reward_formatted": "$70",
+    "task.title": "Multi-section Unravel Stage seems to do many more iterations than required, there are no graphs of loss to help guide hyper parameter adjustment",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/unravel-autorouter/issues/63"
+  },
+  {
+    "reward_formatted": "$70",
+    "task.title": "Introduce Caching for HyperHighDensitySolver",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/unravel-autorouter/issues/61"
+  },
+  {
+    "reward_formatted": "$400",
+    "task.title": "[bounty] fix audio device randomly stopping sometimes",
+    "org.name": "mediar.ai",
+    "org.handle": "mediar-ai",
+    "task.url": "https://github.com/mediar-ai/screenpipe/issues/1626"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "[🔌 Provider]: Nagios Provider",
+    "org.name": "Keep (YC W23)",
+    "org.handle": "keephq",
+    "task.url": "https://github.com/keephq/keep/issues/3960"
+  },
+  {
+    "reward_formatted": "$8",
+    "task.title": "Moving from the `preview` page to `editor` doesn't refresh",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit.com/issues/712"
+  },
+  {
+    "reward_formatted": "$5",
+    "task.title": "use the new auto generated docs in the system prompt",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/prompt-benchmarks/issues/45"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "`shape: cycle`",
+    "org.name": "Terrastruct",
+    "org.handle": "terrastruct",
+    "task.url": "https://github.com/terrastruct/d2/issues/1578"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "[🔌 Provider]: Solarwinds",
+    "org.name": "Keep (YC W23)",
+    "org.handle": "keephq",
+    "task.url": "https://github.com/keephq/keep/issues/3526"
+  },
+  {
+    "reward_formatted": "$3",
+    "task.title": "Remove `disableAutoFocus` in favor of `focusOnHover={false}`",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pcb-viewer/issues/163"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "[CAL-5091] additional settings: \"add team member as optional guest",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/18947"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "[CAL-5107] add no-show to zapier (its a webhook only right now)",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/18992"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "[CAL-5097] add the same \"booking questions\" to routing forms",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/18987"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Database dumps do not work on large databases",
+    "org.name": "Outerbase (YC W23)",
+    "org.handle": "outerbase",
+    "task.url": "https://github.com/outerbase/starbasedb/issues/59"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Replicate data from external source to internal source with a Plugin",
+    "org.name": "Outerbase (YC W23)",
+    "org.handle": "outerbase",
+    "task.url": "https://github.com/outerbase/starbasedb/issues/72"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Missing Authorization header is reported as 400 instead of 401",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/3235"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[🔌 Provider]: SNMP provider",
+    "org.name": "Keep (YC W23)",
+    "org.handle": "keephq",
+    "task.url": "https://github.com/keephq/keep/issues/2112"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Bootstrap w/ API for sending payment",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/fake-algora/issues/1"
+  },
+  {
+    "reward_formatted": "$5",
+    "task.title": "rerunning on snippets does not persists that I want to display bottom layer",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pcb-viewer/issues/127"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "Use pglite so that postgres isn't required when generating types",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/seveibar/pgstrap/issues/2"
+  },
+  {
+    "reward_formatted": "$5",
+    "task.title": "Undefined in readable netlists, pin labels are too short, just \"pin14\" instead of full pin labels",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/circuit-json-to-readable-netlist/issues/4"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Create a CLI for using potpie locally ",
+    "org.name": "potpie.ai",
+    "org.handle": "potpie-ai",
+    "task.url": "https://github.com/potpie-ai/potpie/issues/224"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Implement inference caching while knowledge graph generation ",
+    "org.name": "potpie.ai",
+    "org.handle": "potpie-ai",
+    "task.url": "https://github.com/potpie-ai/potpie/issues/223"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Support multiple LLMs through Litellm",
+    "org.name": "potpie.ai",
+    "org.handle": "potpie-ai",
+    "task.url": "https://github.com/potpie-ai/potpie/issues/222"
+  },
+  {
+    "reward_formatted": "$20",
+    "task.title": "Incremental Knowledge Graph updates",
+    "org.name": "potpie.ai",
+    "org.handle": "potpie-ai",
+    "task.url": "https://github.com/potpie-ai/potpie/issues/221"
+  },
+  {
+    "reward_formatted": "$500",
+    "task.title": "XML Codec",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/754"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Fix the schematic view by also optionally accepting kicad_sym and converting into a schPortArrangement and pinLabels",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/kicad-component-converter/issues/114"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Allow manual editing of board size (if specified in width/height)",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pcb-viewer/issues/106"
+  },
+  {
+    "reward_formatted": "$2,500",
+    "task.title": "Persist Input Capture XDG Desktop Portal dialog (Wayland)",
+    "org.name": "Deskflow",
+    "org.handle": "deskflow",
+    "task.url": "https://github.com/deskflow/deskflow/issues/8032"
+  },
+  {
+    "reward_formatted": "$5,000",
+    "task.title": "Clipboard support in XDG Desktop Portal (Wayland)",
+    "org.name": "Deskflow",
+    "org.handle": "deskflow",
+    "task.url": "https://github.com/deskflow/deskflow/issues/8031"
+  },
+  {
+    "reward_formatted": "$5",
+    "task.title": "Hovering over tooltips causes major slowdown on 3d viewer, probably due to \"overrendering\"",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/3d-viewer/issues/94"
+  },
+  {
+    "reward_formatted": "$5",
+    "task.title": "Improve 3d model loading to avoid laggy browser",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/3d-viewer/issues/93"
+  },
+  {
+    "reward_formatted": "$20",
+    "task.title": "Figure out a way to commit to protected branches",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pver/issues/1"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "generic mapper: add video walkthrough on how to set it up",
+    "org.name": "Mudlet",
+    "org.handle": "Mudlet",
+    "task.url": "https://github.com/Mudlet/Mudlet/issues/3172"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Update workspace and project settings to not use antd components",
+    "org.name": "Highlight (YC W23)",
+    "org.handle": "highlight",
+    "task.url": "https://github.com/highlight/highlight/issues/8635"
+  },
+  {
+    "reward_formatted": "$20",
+    "task.title": "Silkscreen lines don't move when applying manual edit events",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/pcb-viewer/issues/84"
+  },
+  {
+    "reward_formatted": "$70",
+    "task.title": "We can't convert Smoothie Board to Circuit JSON",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/dsn-converter/issues/54"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "cadModel positionOffset axis are not calculated correctly when importing from jlcpcb",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/easyeda-converter/issues/123"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Get in-progress traces using API",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/freerouting/freerouting/issues/388"
+  },
+  {
+    "reward_formatted": "$125",
+    "task.title": "Parallelism level in `ZStream#mapZIOPar` is bounded by the buffer size",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9339"
+  },
+  {
+    "reward_formatted": "$2,500",
+    "task.title": "Implement NIO scheduler for ZIO",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9356"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "request suggestion menu mentions to support CompositionEvent for chinese input",
+    "org.name": "BlockNote",
+    "org.handle": "BlockNote",
+    "task.url": "https://github.com/TypeCellOS/BlockNote/issues/1283"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "update design of integrations page",
+    "org.name": "Highlight (YC W23)",
+    "org.handle": "highlight",
+    "task.url": "https://github.com/highlight/highlight/issues/8614"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "gRPC Support",
+    "org.name": "Kaizen Solutions",
+    "org.handle": "kaizen-solutions",
+    "task.url": "https://github.com/getkyo/kyo/issues/390"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Build the Arduino Nano with tscircuit",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/tscircuit/issues/328"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Multilayer Ijump: Remove wild trace jumps",
+    "org.name": "tscircuit",
+    "org.handle": "tscircuit",
+    "task.url": "https://github.com/tscircuit/autorouting/issues/92"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Status of Runtime Operation Logging",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9170"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Use ConcurrentLinkedDeque from Scala Native",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9189"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Support TagMacro parameter substitution for polymorphic function types on Scala 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/izumi-reflect/issues/404"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Better lambda normal form",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/izumi-reflect/issues/379"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Granular complile-time caches for Scala 2 and 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/izumi-reflect/issues/350"
+  },
+  {
+    "reward_formatted": "$750",
+    "task.title": "Subtype relation for refined type fails",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/izumi-reflect/issues/481"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "ZIO.timeoutTO has tremendous overhead",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9211"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Easier derivation of Config with Scala 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9268"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[Dashboard] Kong Gateway",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6028"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[Dashboard] Istio based on prometheus",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6025"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Add inline comments on commits",
+    "org.name": "Gitea",
+    "org.handle": "go-gitea",
+    "task.url": "https://github.com/go-gitea/gitea/issues/4898"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "[Dashboard] cert-manager ",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6023"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "[Dashboard Request] AWS MSK Cluster",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6036"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "[Dashboard Request] Kafka Server Monitoring",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6026"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[Dashboard Request] Elasticsearch Monitoring Dashboard",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/6010"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "Flag ZClient.request as deprecated",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/3133"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "ClassCassException when using HandlerAspect and Path parameters.",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/3141"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "[Dashboard Request] ASP .NET Metrics Dashboard",
+    "org.name": "SigNoz",
+    "org.handle": "SigNoz",
+    "task.url": "https://github.com/SigNoz/signoz/issues/5996"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Add ZStream.fromInputStreamInterruptible",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9084"
+  },
+  {
+    "reward_formatted": "$650",
+    "task.title": "zio.test.Gen generates the same data every time in certain conditions ",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9101"
+  },
+  {
+    "reward_formatted": "$650",
+    "task.title": "ZIO's `Semaphore` performance not too great",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/9093"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Jira Service Management Connector",
+    "org.name": "Onyx (YC W24)",
+    "org.handle": "onyx-dot-app",
+    "task.url": "https://github.com/danswer-ai/danswer/issues/2281"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[CAL-4531] Take into account guest's availability when rescheduling",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/16378"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "JsonCodec decoder accepts malformed JSON string with extra characters",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/712"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Generate Objective C resources for internal targets",
+    "org.name": "Tuist",
+    "org.handle": "tuist",
+    "task.url": "https://github.com/tuist/tuist/issues/6456"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Add support for customizing project groups",
+    "org.name": "Tuist",
+    "org.handle": "tuist",
+    "task.url": "https://github.com/tuist/tuist/issues/268"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Add support for building, running, and testing multi-platform targets",
+    "org.name": "Tuist",
+    "org.handle": "tuist",
+    "task.url": "https://github.com/tuist/tuist/issues/5920"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "TargetScript output files are ignored if the files don't exist at generate time",
+    "org.name": "Tuist",
+    "org.handle": "tuist",
+    "task.url": "https://github.com/tuist/tuist/issues/5925"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Support for `.xcstrings` catalog",
+    "org.name": "Tuist",
+    "org.handle": "tuist",
+    "task.url": "https://github.com/tuist/tuist/issues/6048"
+  },
+  {
+    "reward_formatted": "$175",
+    "task.title": "Schema deterministic hashcode for DynamicValue",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/655"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Unable to publishLocal on Windows 11 using Scala 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/674"
+  },
+  {
+    "reward_formatted": "$500",
+    "task.title": "gRPC Support",
+    "org.name": "Kyo",
+    "org.handle": "getkyo",
+    "task.url": "https://github.com/getkyo/kyo/issues/390"
+  },
+  {
+    "reward_formatted": "$20",
+    "task.title": "document sveltekit backend instrumentation",
+    "org.name": "Highlight (YC W23)",
+    "org.handle": "highlight",
+    "task.url": "https://github.com/highlight/highlight/issues/8032"
+  },
+  {
+    "reward_formatted": "$1,500",
+    "task.title": "Create Loom-friendly concurrent weak set (FiberSet)",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8861"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Return vectorized query with results",
+    "org.name": "Weaviate",
+    "org.handle": "weaviate",
+    "task.url": "https://github.com/weaviate/weaviate/issues/2496"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "[new feature] Highlighting ",
+    "org.name": "Weaviate",
+    "org.handle": "weaviate",
+    "task.url": "https://github.com/weaviate/weaviate/issues/2567"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "[Feature Request] Add \"Not\" operator in filter to support \"Not Like\" etc. in Get queries",
+    "org.name": "Weaviate",
+    "org.handle": "weaviate",
+    "task.url": "https://github.com/weaviate/weaviate/issues/3683"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "NearVector Search Returns Non-Existing Objects",
+    "org.name": "Weaviate",
+    "org.handle": "weaviate",
+    "task.url": "https://github.com/weaviate/weaviate/issues/3868"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "ZStream.groupedWithin works in unexpected way for infinite stream",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8686"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Missing stacktraces from right-side effect of `.flatMap`",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8747"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "ZStream.tapSink, either a flaky test or flaky implementation",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8792"
+  },
+  {
+    "reward_formatted": "$1,250",
+    "task.title": "Creating highly optimized and specialized fiber mailbox",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8807"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Error when reading json array file?",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-json/issues/1071"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "zio-json-macros for Scala 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-json/issues/1090"
+  },
+  {
+    "reward_formatted": "$40",
+    "task.title": "Vue Integration",
+    "org.name": "Abby",
+    "org.handle": "Abby",
+    "task.url": "https://github.com/tryabby/abby/issues/68"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Gitea support",
+    "org.name": "CommitGo, Inc.",
+    "org.handle": "CommitGo",
+    "task.url": "https://github.com/gitbutlerapp/gitbutler/issues/2904"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "zio-test: `macro has not been expanded` for test with flatMap",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8668"
+  },
+  {
+    "reward_formatted": "$75",
+    "task.title": "zio-test: classic assertion `equalTo` using `Diff`",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio/issues/8664"
+  },
+  {
+    "reward_formatted": "$300",
+    "task.title": "Performance of canvas snapshotting on Safari is poor",
+    "org.name": "Highlight (YC W23)",
+    "org.handle": "highlight",
+    "task.url": "https://github.com/highlight/highlight/issues/6775"
+  },
+  {
+    "reward_formatted": "$20",
+    "task.title": "[CAL-3076] allow emails and invite people to a team event-type directly from \"assignment\" if not in team yet",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/13532"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Multitenancy and Teams/Workspaces support",
+    "org.name": "Magnet.wtf",
+    "org.handle": "Magnet-wtf",
+    "task.url": "https://github.com/Magnet-wtf/caley.io/issues/1"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Per-collection metrics for Prometheus",
+    "org.name": "Qdrant",
+    "org.handle": "Qdrant",
+    "task.url": "https://github.com/qdrant/qdrant/issues/3322"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Support telnet:// links",
+    "org.name": "Mudlet",
+    "org.handle": "Mudlet",
+    "task.url": "https://github.com/Mudlet/Mudlet/issues/689"
+  },
+  {
+    "reward_formatted": "$850",
+    "task.title": "[ISAAC-497] Implement an enhanced RAG Pipeline for Scientific/Research Workflows",
+    "org.name": "Isaac",
+    "org.handle": "isaac",
+    "task.url": "https://github.com/aietal/isaac/issues/45"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Endpoint, Token, Cert Path, and Cert Key Storage for CLI Tool",
+    "org.name": "Permify.co",
+    "org.handle": "Permify",
+    "task.url": "https://github.com/Permify/permify-cli/issues/2"
+  },
+  {
+    "reward_formatted": "$400",
+    "task.title": "Creating CLI for managing Permify instances & Run Permify main functionalities",
+    "org.name": "Permify.co",
+    "org.handle": "Permify",
+    "task.url": "https://github.com/Permify/permify/issues/146"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "BOUNTY: integrate AWS Comprehend as a utility to redact data",
+    "org.name": "Arakoo.ai",
+    "org.handle": "arakoodev",
+    "task.url": "https://github.com/arakoodev/EdgeChains/issues/290"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "BOUNTY: Convert the endpoints to a smart router like litellm does in python",
+    "org.name": "Arakoo.ai",
+    "org.handle": "arakoodev",
+    "task.url": "https://github.com/arakoodev/EdgeChains/issues/286"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "BOUNTY: add support for Google Palm2 API in javascript/typescript",
+    "org.name": "Arakoo.ai",
+    "org.handle": "arakoodev",
+    "task.url": "https://github.com/arakoodev/EdgeChains/issues/279"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "BOUNTY: add support for qdrant vector database in javascript sdk",
+    "org.name": "Arakoo.ai",
+    "org.handle": "arakoodev",
+    "task.url": "https://github.com/arakoodev/EdgeChains/issues/273"
+  },
+  {
+    "reward_formatted": "$40",
+    "task.title": "Refactor used functions with destination parameters to use rosenpass-to",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/164"
+  },
+  {
+    "reward_formatted": "$40",
+    "task.title": "[Feature request]: Administrator requires a custodian to read and sign a document when assigning long term custody",
+    "org.name": "Shelf",
+    "org.handle": "Shelf-nu",
+    "task.url": "https://github.com/Shelf-nu/shelf.nu/issues/461"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "[Feature request]: Custodian electronically signs template document before receiving custody",
+    "org.name": "Shelf",
+    "org.handle": "Shelf-nu",
+    "task.url": "https://github.com/Shelf-nu/shelf.nu/issues/499"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Enhancing the 'Coverage' Command for Detailed Action/Permission Conditions",
+    "org.name": "Permify.co",
+    "org.handle": "Permify",
+    "task.url": "https://github.com/Permify/permify/issues/837"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Refinement of Schema Files: Integrating Scenario-Specific Relationships and Attributes",
+    "org.name": "Permify.co",
+    "org.handle": "Permify",
+    "task.url": "https://github.com/Permify/permify/issues/838"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "[FEATURE]: Default select for custom types",
+    "org.name": "Seated",
+    "org.handle": "Seated",
+    "task.url": "https://github.com/drizzle-team/drizzle-orm/issues/1083"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "Allow wrapping the column in custom SQL for custom types",
+    "org.name": "Seated",
+    "org.handle": "Seated",
+    "task.url": "https://github.com/drizzle-team/drizzle-orm/issues/554"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Add proper error handling and wrapping",
+    "org.name": "Seated",
+    "org.handle": "Seated",
+    "task.url": "https://github.com/drizzle-team/drizzle-orm/issues/376"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "[Project Tracker] Sensor configuration display UI",
+    "org.name": "PX4 Autopilot",
+    "org.handle": "PX4",
+    "task.url": "https://github.com/PX4/PX4-Autopilot/issues/19970"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "ZBD API Integration with Trigger.dev",
+    "org.name": "ZBD",
+    "org.handle": "zbd",
+    "task.url": "https://github.com/zebedeeio/trigger.dev/issues/2"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Implement WPS Writer",
+    "org.name": "PHPOffice",
+    "org.handle": "PHPOffice",
+    "task.url": "https://github.com/PHPOffice/PHPWord/issues/69"
+  },
+  {
+    "reward_formatted": "$40",
+    "task.title": "Reader / Writer for Keynote",
+    "org.name": "PHPOffice",
+    "org.handle": "PHPOffice",
+    "task.url": "https://github.com/PHPOffice/PHPPresentation/issues/48"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Network manager support: NetworkManager",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/83"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Network manager support: ConnMan",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/82"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Network manager support: systemd-networkd",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/81"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Network manager support: netctl",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/80"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Network manager support: Open vSwitch",
+    "org.name": "Rosenpass",
+    "org.handle": "rosenpass",
+    "task.url": "https://github.com/rosenpass/rosenpass/issues/79"
+  },
+  {
+    "reward_formatted": "$25",
+    "task.title": "Schema in object being inferred differently (and weirdly)",
+    "org.name": "Trigger.dev (YC W23)",
+    "org.handle": "triggerdotdev",
+    "task.url": "https://github.com/colinhacks/zod/issues/2654"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "NoRouteToHostException when making a request to https url from a zio-http Client using Scala 3",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/2280"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Replace Schema-based derivation of encoder / decoder with ZIO Schema Deriver-based derivation",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-jdbc/issues/144"
+  },
+  {
+    "reward_formatted": "$30",
+    "task.title": "Autocomplete steals window focus, prevents further typing",
+    "org.name": "Mudlet",
+    "org.handle": "Mudlet",
+    "task.url": "https://github.com/Mudlet/Mudlet/issues/5310"
+  },
+  {
+    "reward_formatted": "$250",
+    "task.title": "Add support for reading command-line options from file(s)",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-cli/issues/191"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "[CAL-3105] BigBlueButton Integration",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/1985"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Support use of JTA transaction ?",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-jdbc/issues/54"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Effectively leverage typed errors by defining precise sealed hierarchy of errors",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-jdbc/issues/74"
+  },
+  {
+    "reward_formatted": "$50",
+    "task.title": "Support `JdbcEncoder` when using `Segment.Param`",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-jdbc/issues/83"
+  },
+  {
+    "reward_formatted": "$100",
+    "task.title": "Add support for Happy Eyeballs",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-http/issues/1996"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Unable to convert to TypedValue ",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/511"
+  },
+  {
+    "reward_formatted": "$150",
+    "task.title": "Improve DynamicValue error handling",
+    "org.name": "ZIO",
+    "org.handle": "ZIO",
+    "task.url": "https://github.com/zio/zio-schema/issues/480"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Add CodeMash to the conference data tracker",
+    "org.name": "Speakers in Tech",
+    "org.handle": "speakers-in-tech",
+    "task.url": "https://github.com/speakers-in-tech/conference-data/issues/10"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Add QCon to the conference data tracker",
+    "org.name": "Speakers in Tech",
+    "org.handle": "speakers-in-tech",
+    "task.url": "https://github.com/speakers-in-tech/conference-data/issues/11"
+  },
+  {
+    "reward_formatted": "$10",
+    "task.title": "Add ScalaDays to conference data tracker",
+    "org.name": "Speakers in Tech",
+    "org.handle": "speakers-in-tech",
+    "task.url": "https://github.com/speakers-in-tech/conference-data/issues/4"
+  },
+  {
+    "reward_formatted": "$200",
+    "task.title": "Proton Calendar Integration",
+    "org.name": "Cal.com, Inc.",
+    "org.handle": "cal",
+    "task.url": "https://github.com/calcom/cal.com/issues/5756"
+  }
+]

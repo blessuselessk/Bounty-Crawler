@@ -1,0 +1,11 @@
+name: Bounty-Crawler
+version: 1.0.0
+description: APM project for Bounty-Crawler
+author: Ashley Barr
+dependencies:
+  apm:
+  - microsoft/apm-sample-package
+  - anthropics/skills/skills/frontend-design
+  - github/awesome-copilot/agents/api-architect.agent.md
+  mcp: []
+scripts: {}
