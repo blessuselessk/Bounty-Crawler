@@ -62,6 +62,27 @@ let repo_monetizability_score = fun avg_bounty_mono open_bounty_count =>
   )
 in
 
+# ─── Maintainer-level formulas ───────────────────────────────────────────────
+
+# activity_n    = clamp(recent_commits_90d / 30, 0, 1)
+# merge_n       = clamp(merged_prs / 10, 0, 1)
+# commit_share  = maintainer_total_commits / repo_total_commits  (bus factor proxy)
+#
+# maintainer_score = 0.40 * activity_n + 0.35 * merge_n + 0.25 * commit_share
+# bus_factor_risk  = commit_share > 0.60
+
+let maintainer_score = fun recent_commits merged_prs commit_share =>
+  let activity_n = clamp 0.0 1.0 (recent_commits / 30.0) in
+  let merge_n    = clamp 0.0 1.0 (merged_prs    / 10.0) in
+  clamp 0.0 1.0 (
+    0.40 * activity_n
+    + 0.35 * merge_n
+    + 0.25 * commit_share
+  )
+in
+
+let bus_factor_risk = fun commit_share => commit_share > 0.60 in
+
 # ─── Project-level formulas ──────────────────────────────────────────────────
 
 let engagement_score = fun comments attempts total_bounties =>
@@ -147,12 +168,36 @@ let RepoScores = fun label value =>
   else value
 in
 
+let MaintainerMetrics = {
+  total_commits      | Number,
+  recent_commits_90d | Number,
+  merged_prs         | Number,
+  commit_share       | Fraction,
+} in
+
+let MaintainerScores = fun label value =>
+  let expected = maintainer_score
+    value.metrics.recent_commits_90d
+    value.metrics.merged_prs
+    value.metrics.commit_share
+  in
+  let ok = ((value.scores.maintainer_score - expected) | std.number.abs) < 0.001 in
+  if !ok then
+    std.contract.blame_with_message "maintainer_score deviates from formula by >0.001" label
+  else value
+in
+
+let Maintainer = {
+  metrics | MaintainerMetrics,
+  scores  | MaintainerScores,
+} in
+
 let Repo = {
   description  | String,
   language     | Array String,
   topics       | Array String,
   url          | String,
-  maintainers  | Array String,
+  maintainers  | { _ | Maintainer },
   license      | std.contract.any,
   metrics = {
     stars                  | Number,

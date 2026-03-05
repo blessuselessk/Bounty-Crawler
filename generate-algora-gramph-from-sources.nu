@@ -125,10 +125,37 @@ def fetch-repo-languages [owner: string, repo: string]: nothing -> list<string> 
   } catch { [] }
 }
 
-def fetch-repo-maintainers [owner: string, repo: string]: nothing -> list<string> {
+def fetch-contributor-stats [owner: string, repo: string]: nothing -> list<record> {
   try {
-    gh api $"repos/($owner)/($repo)/contributors?per_page=5" | from json | get login
+    let raw = (gh api $"repos/($owner)/($repo)/stats/contributors" | from json)
+    # API returns 202 (empty list) while computing — treat as unavailable
+    if ($raw | length) == 0 { return [] }
+    $raw | each {|c|
+      let recent = ($c.weeks | last 13 | each {|w| $w.c} | math sum)
+      { login: $c.author.login, total_commits: $c.total, recent_commits_90d: $recent }
+    }
   } catch { [] }
+}
+
+def fetch-merged-prs [owner: string, repo: string]: nothing -> record {
+  try {
+    let prs = (gh api $"repos/($owner)/($repo)/pulls?state=closed&per_page=100" | from json)
+    let merged = ($prs | where { |pr| ($pr | get merged_at? | default null) != null })
+    $merged
+    | each {|pr| $pr.user.login}
+    | uniq --count
+    | reduce -f {} {|it, acc| $acc | insert $it.value $it.count}
+  } catch { {} }
+}
+
+def compute-maintainer-score [
+  recent_commits: int,
+  merged_prs: int,
+  commit_share: float
+]: nothing -> float {
+  let activity_n = (clamp ($recent_commits / 30.0) 0.0 1.0)
+  let merge_n    = (clamp ($merged_prs    / 10.0) 0.0 1.0)
+  clamp (0.40 * $activity_n + 0.35 * $merge_n + 0.25 * $commit_share) 0.0 1.0
 }
 
 def fetch-repo-velocity [owner: string, repo: string]: nothing -> int {
@@ -243,12 +270,13 @@ let org_summaries = (
 
         print $"  ($owner)/($repo_name) ($open_b_count) bounties..."
 
-        let meta        = (fetch-repo-meta       $owner $repo_name)
-        let languages   = (fetch-repo-languages  $owner $repo_name)
-        let maintainers = (fetch-repo-maintainers $owner $repo_name)
-        let velocity    = (fetch-repo-velocity   $owner $repo_name)
-        let release     = (fetch-repo-latest-release $owner $repo_name)
-        let closed_b    = (fetch-closed-bounty-count $owner $repo_name)
+        let meta           = (fetch-repo-meta          $owner $repo_name)
+        let languages      = (fetch-repo-languages     $owner $repo_name)
+        let contrib_stats  = (fetch-contributor-stats  $owner $repo_name)
+        let merged_prs_map = (fetch-merged-prs         $owner $repo_name)
+        let velocity       = (fetch-repo-velocity      $owner $repo_name)
+        let release        = (fetch-repo-latest-release $owner $repo_name)
+        let closed_b       = (fetch-closed-bounty-count $owner $repo_name)
 
         # Repo age / freshness
         let days_since_push = (days-between $meta.pushed_at $current_time)
@@ -297,7 +325,33 @@ let org_summaries = (
         let avg_mono = (if ($mono_scores | length) > 0 { $mono_scores | math avg } else { 0.0 })
         let repo_mono = (clamp (0.70 * $avg_mono + 0.30 * ($open_b_count / 10.0)) 0.0 1.0)
 
-        let contributor_count = ($maintainers | length)
+        # Build scored maintainer records (top 10 by total commits)
+        let contrib_commit_list = ($contrib_stats | each {|c| $c.total_commits})
+        let total_repo_commits = (if ($contrib_commit_list | length) > 0 { $contrib_commit_list | math sum } else { 1 })
+        let contributor_count = ($contrib_stats | length)
+        let maintainers = (
+          $contrib_stats
+          | sort-by total_commits -r
+          | first ([$contrib_stats | length, 10] | math min)
+          | reduce -f {} {|c, acc|
+            let share   = (clamp ($c.total_commits / ($total_repo_commits | into float)) 0.0 1.0)
+            let prs     = ($merged_prs_map | get -o $c.login | default 0)
+            let score   = (compute-maintainer-score $c.recent_commits_90d $prs $share)
+            let bus_risk = ($share > 0.60)
+            $acc | insert $c.login {
+              metrics: {
+                total_commits:      $c.total_commits,
+                recent_commits_90d: $c.recent_commits_90d,
+                merged_prs:         $prs,
+                commit_share:       $share,
+              },
+              scores: {
+                maintainer_score: $score,
+                bus_factor_risk:  $bus_risk,
+              }
+            }
+          }
+        )
 
         {
           name: $repo_name,
