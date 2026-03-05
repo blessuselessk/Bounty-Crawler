@@ -1,0 +1,36 @@
+{
+  "instructionFile": ".github/copilot-instructions.md",
+  "systemMessage": "You are analyzing a dual-codebase bounty crawler system with TypeScript agents and Python data pipelines. Answer questions about this specific project's architecture, data flow, and conventions. Do not provide generic Copilot CLI guidance unless explicitly asked.",
+  "cases": [
+    {
+      "id": "case-data-flow-end-to-end",
+      "prompt": "Trace the complete data transformation pipeline from initial Algora API fetch to final bounties_template.json output. Identify: (1) which script performs each stage, (2) the data structure transformations at each boundary, (3) where status vocabulary is enforced, (4) how reward parsing handles edge cases (non-numeric, commas, currency symbols). Show the implicit coupling between Nushell and Python scripts.",
+      "expectation": "Answer must identify: generate-algora-gramph-from-sources.nu fetches from Algora API and produces algora-bounties.json; bounties_grouped.json is an intermediate aggregation; generator.py transforms bounties_grouped.json to bounties_template.json with hardcoded current_time ('2026-03-02T22:48:59-06:00'); status values (open, triage, active, submitted, smelly, stinks, stale, completed) are defined in comments but generator.py sets all bounties to 'open' (line 81); reward parsing uses regex to strip '$' and ',' then converts to float (lines 49-54); issue_id extraction uses regex on GitHub URL (lines 61-64); if URL parsing fails, defaults to 'unknown' repo and 0 issue_id.",
+      "area": "data-pipeline"
+    },
+    {
+      "id": "case-eval-framework-integration",
+      "prompt": "Explain how the eval framework couples repository analysis, instruction files, and Copilot SDK sessions. Specifically: (1) how does evalScaffold.ts generate hard eval cases by inspecting the repo, (2) how are workingDirectory constraints validated to prevent security escapes, (3) what is the three-phase comparison flow (without instructions, with instructions, judge), (4) why is buildPrompt() necessary and what would break if it were removed, (5) how does the judge model parse verdicts from free-form JSON?",
+      "expectation": "Must identify: evalScaffold.ts uses Copilot SDK session with 'fast-glob', 'grep', 'view' tools and system message instructing LLM to 'avoid trivial questions answerable from a single file read or grep' (line 56); workingDirectory is validated with boundary check at lines 115-121 (ensures path doesn't escape repo); three phases are withoutInstructions, withInstructions, and judge (line 58 EvalPhase type); buildPrompt() prepends repo path context which is essential for file tools to work correctly (evaluator.ts line 108-109); judge uses JSON extraction regex at line 328 to parse JSON from free-form content, with fallback to 'unknown' verdict if parsing fails (line 339).",
+      "area": "evaluation-framework"
+    },
+    {
+      "id": "case-monorepo-app-detection",
+      "prompt": "The analyzer.ts detects monorepos and apps across multiple ecosystems. Trace the detection logic: (1) How does it distinguish between npm workspaces and non-JS monorepos? (2) What happens if both workspace.patterns and non-JS detection find multiple apps? (3) How does the presence of turbo.json or nx.json override earlier workspace type decisions? (4) What implicit assumptions about directory structure does detectAreas() make, and how might they fail for unconventional layouts?",
+      "expectation": "Must identify: resolveWorkspaceApps() is called first with workspace.patterns (line 124); if apps.length <= 1, detectNonJsMonorepo() is tried as fallback (lines 127-134); turbo.json presence overrides to 'turborepo' only if workspace exists AND apps.length > 1 (line 136); nx.json similarly requires apps.length > 1 and no prior turborepo detection (line 140); detectAreas() is called with full RepoAnalysis (line 151) but the function implementation requires inspecting detectAreas to understand assumptions about folder patterns, package.json locations, and language-specific conventions.",
+      "area": "repository-analysis"
+    },
+    {
+      "id": "case-instructions-generation-strategy",
+      "prompt": "The instructions system supports both 'flat' and 'nested' strategies (AGENTS.md vs nested structure with CLAUDE.md). Examine how: (1) detectExistingInstructions() avoids duplicating coverage by scanning for AGENTS.md, CLAUDE.md, .instructions.md, and detail files; (2) what is the difference between 'area' instructions and modular instruction files; (3) if a repo already has AGENTS.md in root and agentrc wants to generate instructions per-area, what file structure conflicts would occur and how are they prevented?",
+      "expectation": "Must identify: detectExistingInstructions() scans for agentsMdFiles, claudeMdFiles, instructionMdFiles in .github/instructions/, and detailFiles in .agents/ directory (lines 45-52); excludeDirs includes 'apm_modules' and '.apm' to skip generated code (line 65); nested strategy generates per-area CLAUDE.md files alongside AGENTS.md when --claude-md flag is used (instructions.ts usage); conflict prevention requires --force flag to overwrite or skip existing files; modular approach puts area instructions in separate files (.github/instructions/*.instructions.md) while nested uses topic-based .agents/ subdirectories.",
+      "area": "instruction-generation"
+    },
+    {
+      "id": "case-bounty-status-workflow",
+      "prompt": "The bounty data model defines 8 status values in comments (open, triage, active, submitted, smelly, stinks, stale, completed) with specific semantics about attempts and PRs. However: (1) what is the actual implementation gap between the documented statuses and bounties_template.json output, (2) how would the Nushell script fetch-issue-metrics() calculate 'attempts' and why might it undercount PRs, (3) if you needed to preserve detailed status history (not just current state), what architectural changes would be required across all three layers (Nushell, Python, TypeScript)?",
+      "expectation": "Must identify: generator.py hard-codes all bounties to status 'open' (line 81), ignoring the documented 8-status vocabulary defined in comments (lines 5-13); Nushell fetch-issue-metrics() counts cross-referenced timeline events as 'attempts' (lines ~71-77 in .nu file), which would miss direct linked PRs or external references; 'smelly' status requires parsing comment sentiment (not implemented); 'stinks' requires time-based logic (5+ days) needing timestamp tracking; to preserve history would need: (a) status_history array in bounties_template.json schema, (b) Nushell to fetch GitHub issue events and timestamps, (c) Python to aggregate into history, (d) TypeScript readiness/analyzer to expose status trends.",
+      "area": "data-model"
+    }
+  ]
+}

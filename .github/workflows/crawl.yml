@@ -1,0 +1,39 @@
+name: Crawl Bounties
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:         # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Nushell
+        run: |
+          curl -Lo /tmp/nu.tar.gz \
+            "https://github.com/nushell/nushell/releases/download/0.101.0/nu-0.101.0-x86_64-unknown-linux-musl.tar.gz"
+          tar -xzf /tmp/nu.tar.gz -C /tmp
+          sudo mv /tmp/nu-0.101.0-x86_64-unknown-linux-musl/nu /usr/local/bin/nu
+          nu --version
+
+      - name: Authenticate gh CLI
+        run: echo "${{ secrets.GH_TOKEN }}" | gh auth login --with-token
+
+      - name: Run crawler
+        run: nu generate-algora-gramph-from-sources.nu
+
+      - name: Commit updated bounties
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add algora-bounties.json
+          git diff --cached --quiet || git commit -m "chore: crawl snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
