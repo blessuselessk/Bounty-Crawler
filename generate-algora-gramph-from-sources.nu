@@ -462,7 +462,7 @@ let new_snapshot = {
 let existing = (
   if ($OUTPUT_FILE | path exists) {
     try {
-      let parsed = (open $OUTPUT_FILE | from json)
+      let parsed = (open $OUTPUT_FILE)
       # Accept only v2.0 files that already have the snapshots array
       if ($parsed | get snapshots? | default null) != null {
         $parsed
@@ -486,6 +486,6 @@ let existing = (
 | to json --indent 2
 | save -f $OUTPUT_FILE
 
-let snap_count = (open $OUTPUT_FILE | from json | get snapshots | length)
+let snap_count = (open $OUTPUT_FILE | get snapshots | length)
 print $"Done. ($total_bounties) bounties across ($total_projects) projects, $($total_rewards | into string) total value."
 print $"Snapshot #($snap_count) appended to ($OUTPUT_FILE)."
