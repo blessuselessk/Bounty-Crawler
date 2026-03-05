@@ -62,6 +62,33 @@ let repo_monetizability_score = fun avg_bounty_mono open_bounty_count =>
   )
 in
 
+# ─── Repo rubric formulas ────────────────────────────────────────────────────
+#
+# contributor_friendliness_score (0–1):
+#   = clamp(
+#       0.35 * (1 - abandonment_rate)       # attempts that didn't get abandoned
+#     + 0.30 * external_merge_rate          # outsiders actually get merged
+#     + 0.20 * (1 - zero_attempt_rate)      # bounties are attempted, not ignored
+#     + 0.15 * readme_freshness_n           # docs are trustworthy
+#   , 0, 1)
+#   readme_freshness_n: readme_age_days < 30 → 1.0, < 180 → 0.6, < 365 → 0.3, else → 0.05
+
+let readme_freshness_n = fun readme_age_days =>
+  if readme_age_days < 30 then 1.0
+  else if readme_age_days < 180 then 0.6
+  else if readme_age_days < 365 then 0.3
+  else 0.05
+in
+
+let contributor_friendliness_score = fun abandonment_rate external_merge_rate zero_attempt_rate readme_age_days =>
+  clamp 0.0 1.0 (
+    0.35 * (1.0 - abandonment_rate)
+    + 0.30 * external_merge_rate
+    + 0.20 * (1.0 - zero_attempt_rate)
+    + 0.15 * (readme_freshness_n readme_age_days)
+  )
+in
+
 # ─── Maintainer-level formulas ───────────────────────────────────────────────
 
 # activity_n    = clamp(recent_commits_90d / 30, 0, 1)
@@ -157,14 +184,19 @@ let Bounty = {
 
 let RepoScores = fun label value =>
   let m = value.metrics in
-  # Recompute days_since_push from last_push_date is not possible without a
-  # current timestamp in Nickel, so we only range-check here.
   let ok_health = value.scores.repo_health_score >= 0.0 && value.scores.repo_health_score <= 1.0 in
   let ok_mono   = value.scores.repo_monetizability_score >= 0.0 && value.scores.repo_monetizability_score <= 1.0 in
+  let expected_cf = contributor_friendliness_score
+    m.abandonment_rate m.external_contributor_merge_rate
+    m.zero_attempt_rate m.readme_age_days
+  in
+  let ok_cf = ((value.scores.contributor_friendliness_score - expected_cf) | std.number.abs) < 0.001 in
   if !ok_health then
     std.contract.blame_with_message "repo_health_score out of [0,1]" label
   else if !ok_mono then
     std.contract.blame_with_message "repo_monetizability_score out of [0,1]" label
+  else if !ok_cf then
+    std.contract.blame_with_message "contributor_friendliness_score deviates from formula by >0.001" label
   else value
 in
 
@@ -215,10 +247,29 @@ let Repo = {
     closed_bounty_count    | Number,
     bounty_completion_rate | Fraction,
     total_bounty_value_usd | Number,
+    # Deep rubric
+    abandoned_attempts               | Number,
+    total_attempts                   | Number,
+    abandonment_rate                 | Fraction,
+    zero_attempt_rate                | Fraction,
+    avg_clarification_comments       | Number,
+    avg_review_comments_per_pr       | Number,
+    external_contributor_merge_rate  | Fraction,
+    pr_sample_size                   | Number,
+    readme_last_updated              | String,
+    readme_age_days                  | Number,
+    has_coverage_badge               | Bool,
+    coverage_pct                     | std.contract.any,
   },
-  scores       | RepoScores,
+  scores = {
+    repo_health_score             | Fraction,
+    repo_monetizability_score     | Fraction,
+    contributor_friendliness_score | Fraction,
+  },
   bounties     | Array Bounty,
 } in
+
+# (RepoMetrics extended inline above — deep rubric fields added to record)
 
 # ─── Project contract ────────────────────────────────────────────────────────
 

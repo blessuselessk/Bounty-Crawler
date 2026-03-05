@@ -55,6 +55,26 @@ def compute-bounty-monetizability [
   clamp $base 0.0 1.0
 }
 
+def compute-contributor-friendliness [
+  abandonment_rate: float,
+  external_merge_rate: float,
+  zero_attempt_rate: float,
+  readme_age_days: float
+]: nothing -> float {
+  let readme_n = (
+    if $readme_age_days < 30 { 1.0 }
+    else if $readme_age_days < 180 { 0.6 }
+    else if $readme_age_days < 365 { 0.3 }
+    else { 0.05 }
+  )
+  clamp (
+    0.35 * (1.0 - $abandonment_rate)
+    + 0.30 * $external_merge_rate
+    + 0.20 * (1.0 - $zero_attempt_rate)
+    + 0.15 * $readme_n
+  ) 0.0 1.0
+}
+
 def compute-repo-health [
   stars: int,
   forks: int,
@@ -156,6 +176,80 @@ def compute-maintainer-score [
   let activity_n = (clamp ($recent_commits / 30.0) 0.0 1.0)
   let merge_n    = (clamp ($merged_prs    / 10.0) 0.0 1.0)
   clamp (0.40 * $activity_n + 0.35 * $merge_n + 0.25 * $commit_share) 0.0 1.0
+}
+
+# Abandonment: cross-ref events on all open bounty issues that have no assignee and no merged PR
+# Returns { abandoned_attempts, total_attempts, abandonment_rate }
+def fetch-repo-abandonment [owner: string, repo: string, bounty_issue_ids: list<int>]: nothing -> record {
+  let results = ($bounty_issue_ids | each {|issue_id|
+    if $issue_id == 0 { return { attempts: 0, abandoned: 0 } }
+    try {
+      let timeline = (gh api $"repos/($owner)/($repo)/issues/($issue_id)/timeline?per_page=100" | from json)
+      let xrefs    = ($timeline | where {|e| ($e | get event? | default "") == "cross-referenced"})
+      let attempts = ($xrefs | length)
+      # An attempt is "abandoned" if the cross-referencing PR is closed without merge
+      let abandoned = ($xrefs | where {|e|
+        let pr_url = ($e | get source.issue.pull_request.url? | default null)
+        if $pr_url == null { return false }
+        try {
+          let pr = (gh api ($pr_url | str replace 'https://api.github.com/' '') | from json)
+          ($pr | get state? | default "") == "closed" and ($pr | get merged_at? | default null) == null
+        } catch { false }
+      } | length)
+      { attempts: $attempts, abandoned: $abandoned }
+    } catch { { attempts: 0, abandoned: 0 } }
+  })
+  let total_attempts   = ($results | get attempts | math sum)
+  let total_abandoned  = ($results | get abandoned | math sum)
+  let abandonment_rate = (if $total_attempts > 0 { $total_abandoned / ($total_attempts | into float) } else { 0.0 })
+  { abandoned_attempts: $total_abandoned, total_attempts: $total_attempts, abandonment_rate: $abandonment_rate }
+}
+
+# README freshness: days since last commit touching README
+def fetch-readme-freshness [owner: string, repo: string]: nothing -> record {
+  try {
+    let commits = (gh api $"repos/($owner)/($repo)/commits?path=README.md&per_page=1" | from json)
+    if ($commits | length) == 0 { return { readme_last_updated: "", readme_age_days: 9999.0 } }
+    let last_date = ($commits | first | get commit.author.date? | default "")
+    { readme_last_updated: $last_date, readme_age_days: (days-between $last_date $current_time) }
+  } catch { { readme_last_updated: "", readme_age_days: 9999.0 } }
+}
+
+# Coverage: scan README for codecov/coveralls badges, hit public API for actual %
+def fetch-coverage [owner: string, repo: string]: nothing -> record {
+  try {
+    let readme_raw = (gh api $"repos/($owner)/($repo)/readme" | from json | get content? | default "" | decode base64 | into string | str trim)
+    let has_codecov   = ($readme_raw | str contains "codecov.io")
+    let has_coveralls = ($readme_raw | str contains "coveralls.io")
+    # Try Codecov public API
+    let coverage_pct = (
+      if $has_codecov {
+        try {
+          http get $"https://codecov.io/api/v2/github/($owner)/repos/($repo)/"
+          | get totals.coverage? | default null
+        } catch { null }
+      } else { null }
+    )
+    { has_coverage_badge: ($has_codecov or $has_coveralls), coverage_pct: $coverage_pct }
+  } catch { { has_coverage_badge: false, coverage_pct: null } }
+}
+
+# PR quality: avg review comments per merged PR + external contributor merge rate
+def fetch-pr-review-stats [owner: string, repo: string, maintainer_logins: list<string>]: nothing -> record {
+  try {
+    let prs = (gh api $"repos/($owner)/($repo)/pulls?state=closed&per_page=50" | from json)
+    let merged = ($prs | where {|pr| ($pr | get merged_at? | default null) != null})
+    if ($merged | length) == 0 {
+      return { avg_review_comments: 0.0, external_merge_rate: 0.0, pr_sample_size: 0 }
+    }
+    let review_comments = ($merged | each {|pr| $pr | get review_comments? | default 0})
+    let avg_review = (($review_comments | math sum) / ($merged | length | into float))
+    let external_merged = ($merged | where {|pr|
+      not ($maintainer_logins | any {|m| $m == ($pr | get user.login? | default "")})
+    } | length)
+    let ext_rate = ($external_merged / ($merged | length | into float))
+    { avg_review_comments: $avg_review, external_merge_rate: $ext_rate, pr_sample_size: ($merged | length) }
+  } catch { { avg_review_comments: 0.0, external_merge_rate: 0.0, pr_sample_size: 0 } }
 }
 
 def fetch-repo-velocity [owner: string, repo: string]: nothing -> int {
@@ -277,6 +371,8 @@ let org_summaries = (
         let velocity       = (fetch-repo-velocity      $owner $repo_name)
         let release        = (fetch-repo-latest-release $owner $repo_name)
         let closed_b       = (fetch-closed-bounty-count $owner $repo_name)
+        let readme         = (fetch-readme-freshness   $owner $repo_name)
+        let coverage       = (fetch-coverage           $owner $repo_name)
 
         # Repo age / freshness
         let days_since_push = (days-between $meta.pushed_at $current_time)
@@ -329,14 +425,19 @@ let org_summaries = (
         let contrib_commit_list = ($contrib_stats | each {|c| $c.total_commits})
         let total_repo_commits = (if ($contrib_commit_list | length) > 0 { $contrib_commit_list | math sum } else { 1 })
         let contributor_count = ($contrib_stats | length)
+        let top_maintainer_logins = (
+          $contrib_stats | sort-by total_commits -r
+          | first ([$contrib_stats | length, 10] | math min)
+          | get login
+        )
         let maintainers = (
           $contrib_stats
           | sort-by total_commits -r
           | first ([$contrib_stats | length, 10] | math min)
           | reduce -f {} {|c, acc|
-            let share   = (clamp ($c.total_commits / ($total_repo_commits | into float)) 0.0 1.0)
-            let prs     = ($merged_prs_map | get -o $c.login | default 0)
-            let score   = (compute-maintainer-score $c.recent_commits_90d $prs $share)
+            let share    = (clamp ($c.total_commits / ($total_repo_commits | into float)) 0.0 1.0)
+            let prs      = ($merged_prs_map | get -o $c.login | default 0)
+            let score    = (compute-maintainer-score $c.recent_commits_90d $prs $share)
             let bus_risk = ($share > 0.60)
             $acc | insert $c.login {
               metrics: {
@@ -352,6 +453,20 @@ let org_summaries = (
             }
           }
         )
+
+        # Deep repo rubric signals
+        let issue_ids   = ($repo_bounties | get issue_id)
+        let abandonment = (fetch-repo-abandonment $owner $repo_name $issue_ids)
+        let pr_stats    = (fetch-pr-review-stats  $owner $repo_name $top_maintainer_logins)
+
+        # Zero-attempt rate: bounties with no cross-references at all
+        let zero_attempt_count = ($enriched_bounties | where { |b| $b.metrics.attempts == 0 } | length)
+        let zero_attempt_rate  = (if $open_b_count > 0 { $zero_attempt_count / ($open_b_count | into float) } else { 0.0 })
+
+        # Avg clarification comments before first attempt (comments on bounties with 0 attempts)
+        let clarification_bounties = ($enriched_bounties | where { |b| $b.metrics.attempts == 0 and $b.metrics.comments > 0 })
+        let clarification_comment_list = ($clarification_bounties | each {|b| $b.metrics.comments})
+        let avg_clarification_comments = (if ($clarification_comment_list | length) > 0 { $clarification_comment_list | math avg } else { 0.0 })
 
         {
           name: $repo_name,
@@ -379,10 +494,29 @@ let org_summaries = (
               closed_bounty_count:   $closed_b,
               bounty_completion_rate: $completion_rate,
               total_bounty_value_usd: $total_b_val,
+              # Deep rubric
+              abandoned_attempts:        $abandonment.abandoned_attempts,
+              total_attempts:            $abandonment.total_attempts,
+              abandonment_rate:          $abandonment.abandonment_rate,
+              zero_attempt_rate:         $zero_attempt_rate,
+              avg_clarification_comments: $avg_clarification_comments,
+              avg_review_comments_per_pr: $pr_stats.avg_review_comments,
+              external_contributor_merge_rate: $pr_stats.external_merge_rate,
+              pr_sample_size:            $pr_stats.pr_sample_size,
+              readme_last_updated:       $readme.readme_last_updated,
+              readme_age_days:           $readme.readme_age_days,
+              has_coverage_badge:        $coverage.has_coverage_badge,
+              coverage_pct:              $coverage.coverage_pct,
             },
             scores: {
-              repo_health_score:        $repo_health,
-              repo_monetizability_score: $repo_mono,
+              repo_health_score:             $repo_health,
+              repo_monetizability_score:     $repo_mono,
+              contributor_friendliness_score: (compute-contributor-friendliness
+                $abandonment.abandonment_rate
+                $pr_stats.external_merge_rate
+                $zero_attempt_rate
+                $readme.readme_age_days
+              ),
             },
             bounties: $enriched_bounties,
           }
